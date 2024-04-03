@@ -109,7 +109,7 @@
 				validar_senha(fazer_deposito)
 			}
 
-			var deposito = parseFloat(prompt('Qual o valor para depósito?'));
+			let deposito = parseFloat(prompt('Qual o valor para depósito?'));
 
 			validar_valor(deposito, fazer_deposito)
 
@@ -123,8 +123,8 @@
 				validar_senha(fazer_transferencia)
 			}
 
-			var codigoContaTransferencia = parseInt(prompt('Qual o código da conta?'));
-			var valorTransferencia = parseFloat(prompt('Qual o valor da transferência?'));
+			let codigoContaTransferencia = parseInt(prompt('Qual o código da conta?'));
+			let valorTransferencia = parseFloat(prompt('Qual o valor da transferência?'));
 			
 			validar_valor(valorTransferencia, fazer_transferencia, validarSaldo=true)
 			
