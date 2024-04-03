@@ -1,0 +1,69 @@
+body {
+    margin-right: 0;
+    font-size: 20px; /* tamanho da fonte */
+    color:blue; /* cor da fonte */
+    font-family: verdana; /* tipo da fonte */
+    background-color: burlywood; /* cor de fundo da área */
+    background-image: url(../components/images/fundo02.jpg);
+    background-size: cover; /*preenche toda a tela tentando manter a proporção*/
+    background-repeat: no-repeat; /*fica do tamanha original e não se repete (não preenche toda tela) */
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    
+}
+
+h1 {
+    color:red;
+    text-decoration: underline; /*underline */
+    text-align: center; /* centralizado */
+}
+
+.texto1 {
+    color:lime;
+    font-family:Courier New;
+}
+
+img {
+    border: 2px solid greenyellow;
+}
+
+.div-img {
+    display: inline;
+    width: 100%;
+}
+
+.different {
+    margin: 0;
+    height: 70vh;
+    width: 97vw;
+    background-size: cover;
+    border: none;
+}
+
+h4 {
+    background-color: black; /*Vai ser substituido pelo css abaixo (ordem de chegada) */
+    color: white;
+    border: 5px;
+    border-style: dotted; /*estilo da borda (dotted=pontilhada*/
+    border-color: red; /*cor da borda*/
+    margin: 50px; /*espaço para fora da área*/
+}
+
+h4, h5, h6 {
+    font-size: 15pt;
+    color: #fd0;
+    text-decoration: underline;
+    background-color: blue;
+    width: 600px;
+    text-align: center; /*Centraliza dentro da 'box'*/
+}
+
+h5 {
+    background-color: blueviolet; /*sobrepõe a config anterior por vir depois*/
+    text-align: right; /*alinha o tecto no eixo X (horizontal) */
+    margin-left: 200px;
+}
+
+h6 {
+    margin: 20px 0 50px 0; /*top right bottom left*/
+}

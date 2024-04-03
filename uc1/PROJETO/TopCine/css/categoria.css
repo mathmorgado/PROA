@@ -1,0 +1,66 @@
+/* Importanto fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* zerando todos espaçamentos padrões */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+body{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(42,42,42,1) 100%);
+}
+
+.conteudo{
+    width: 100%;
+    /* A main deve ocupar toda a largura disponível */
+    max-width: 1700px;
+    /* Limita a largura máxima para evitar que o conteúdo fique muito amplo em telas grandes */
+    margin: 0 auto;
+    /* Centraliza a main horizontalmente */
+    padding: 20px;
+    /* Adiciona um espaçamento interno para afastar o conteúdo das bordas */
+    box-sizing: border-box;
+    /* Garante que o padding não aumente a largura da main */
+    height: auto;
+}
+
+.section-1{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-1 h1{
+    font-size: 40px;
+    padding: 20px 0px;
+    color: #ff5e00c7;
+}
+
+.card-poster {
+    width: 100%;
+    margin-bottom: 50px;
+    cursor: pointer;
+    height: 500px;
+  }
+
+  .poster h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: brightness(60%);
+    transition: 0.3s all;
+  }
+  
+  div img:hover {
+   filter: brightness(100%);
+  }

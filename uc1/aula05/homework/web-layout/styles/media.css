@@ -1,0 +1,31 @@
+@media only screen and (max-width: 720px) {
+    section {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        height: 40vh;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    #red div {
+        width: 100%;
+        height: 48%;
+    }
+
+    #aqua div {
+        width: 45%;
+        height: 45%;
+    }
+
+    #yellow div {
+        width: 90%;
+        height: 48%;
+    }
+}

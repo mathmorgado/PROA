@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --fonte-primaria: 'Libre Baskerville', serif;
+    --fonte-secundaria: 'Dosis', sans-serif;
+    --fonte-terciaria: 'Dancing Script', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C5DBF2;
+}
+
+header {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+
+    margin-left: 10px;
+    
+    list-style: none;
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.box-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-btn button {
+    padding: 15px;
+}
+
+#btn-transparente {
+    margin-right: 15px;
+    border: 1px solid;
+    background-color: #C5DBF2;
+}
+
+#btn-color {
+    color: white;
+    border: none;
+    background-color: #007C89;
+}
+
+main {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+
+    width: 60%;
+    height: 94vh;
+    margin: auto;
+}
+
+/*Conteúdo da main*/
+
+aside {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    width: 50%;
+    height: 55vh;
+}
+
+aside h1 {
+    font-size: 3.5rem;
+    font-weight: 100;
+    font-family: var(--fonte-primaria);
+}
+
+aside p {
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+aside button {
+    width: 40%;
+    padding: 20px 10px;
+    margin-top: 20px;
+
+    font-size: 1rem;
+
+    border: none;
+    color: white;
+    background-color: #007C89;
+}
+
+/*Box's da main*/
+
+article {
+    width: 50%;
+    height: 55vh;
+}
+
+/*Primeira box*/
+.box-product {
+    position: relative;
+
+    width: 70%;
+    height: auto;
+
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #F7D5C5;
+}
+
+.header-box-BigMoodSpa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-box-BigMoodSpa img {
+    border-radius: 10px;
+}
+
+.box-product h2 {
+    font-size: 1.3rem;
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    color: #FB6C52;
+}
+
+.box-product > img {
+    margin: 40px;
+}
+
+/*Segunda box Absoluta*/
+.box-shopping-cart {
+    position: absolute;
+    top: 53%;
+    right: 7%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 13vw;
+    height: auto;
+
+    box-shadow: 7px 7px black;
+
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.box-shopping-cart h3 {
+    font-weight: 100;
+    font-size:  0.85rem;
+    font-family: var(--fonte-primaria);
+
+    padding: 10px;
+    border-bottom: 2px solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.box-shopping-cart img {
+    margin: 0 10px;
+    object-fit: cover;
+}
+
+.box-shopping-cart button {
+
+    width: auto;
+    padding: 5px;
+    margin: 0 10px 10px 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    background-color: #007C89;
+}

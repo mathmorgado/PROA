@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocando o valor de variavéis</title>
+</head>
+<body>
+    
+    <script>
+        let a = parseInt(prompt("Defina o valor de A: "))
+        let b = parseInt(prompt("Defina o valor de B: "))
+        let c
+
+        document.writeln("Antes:<br> a = " + a + "<br>b = " + b)
+
+        c = a
+        
+        a = b
+        b = c
+
+        document.writeln("<br><br>Depois:<br> a = " + a + "\<br>b = " + b)
+    </script>
+
+</body>
+</html>

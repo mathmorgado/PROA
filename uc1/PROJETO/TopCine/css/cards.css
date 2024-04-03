@@ -1,0 +1,124 @@
+/* Card ator */
+
+.card-ator,
+.card-filme {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+    
+}
+
+
+.card-filme:hover{ 
+    transform: translateY(-20px);
+}
+
+.container-img-ator,
+.container-img-filme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    background-color: green;
+}
+
+.img-ator,
+.img-filme {
+    height: 100%;
+    width: 100%;
+}
+
+.img-filme:hover{
+    border: 2px solid #FF5F00;
+}
+
+.nome-ator,
+.nome-filme {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+}
+
+.card-filme {
+    background-color: transparent;
+
+}
+
+/* cards categoria */
+
+.card-categoria {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 350px;
+    background-color: rgb(128, 128, 128);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card-categoria img{
+    height: 100%;
+    width: 100%;
+}
+
+.card-categoria:hover{
+    transform: translateY(-10px);
+    
+}
+
+/* mini-card */
+
+.container-mini-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 60%;
+    height: auto;
+}
+
+.mini-card {
+    height: 200px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+
+.mini-card:hover {
+    border-bottom: 1px solid #FF5F00;
+    transform: translateY(-10px);
+}
+
+.margin {
+    margin-top: 70px;
+}
+
+.container-capa {
+    width: 500px;
+    height: 100%;
+}
+
+.img-capa,
+.img-card {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 1244px)
+{
+
+}

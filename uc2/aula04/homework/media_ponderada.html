@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Ponderada</title>
+</head>
+<body>
+    
+    <script>
+        function validarNota(msg)
+        {
+            let nota = parseFloat(prompt(msg))
+
+            while(nota < 0 || nota > 10)
+            {
+                let nota = parseFloat(prompt(msg))
+            }
+
+            return nota
+        }
+
+        let peso1 = 2
+        let peso2 = 3
+        let peso3 = 5
+
+        let pesosTotal = peso1 + peso2 + peso3
+
+        let nota1 = validarNota("Nota 1: ") * peso1
+        let nota2 = validarNota("Nota 2: ") * peso2
+        let nota3 = validarNota("Nota 3: ") * peso3
+
+
+        let mediaPonderada = (nota1 + nota2 + nota3) / pesosTotal
+
+        document.writeln("A média ponderada foi: " + mediaPonderada)
+    </script>
+
+</body>
+</html>

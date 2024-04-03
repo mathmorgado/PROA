@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impares de 0 a 50</title>
+</head>
+<body>
+    <script>
+        let contador
+
+        document.write("ÍMPARES DE 0 A 50 <br>")
+        document.write("For <br>")
+
+        for(contador = 1; contador <=50 ; contador += 2)
+        {
+            document.write(contador + "<br>")
+        }
+
+        document.write("While <br>")
+
+        contador = 1 // resetando o valor de contador
+
+        while(contador <= 50)
+        {
+            document.write(contador + "<br>")
+            contador += 2
+        }
+
+        document.write("Do While <br>")
+
+        contador = 1 // resentando novamente o valor de contador
+
+        do
+        {
+            document.write(contador + "<br>")
+            contador += 2
+        }
+        while(contador <= 50)
+    </script>
+</body>
+</html>

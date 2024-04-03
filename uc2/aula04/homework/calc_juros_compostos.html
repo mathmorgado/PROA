@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros Compostos</title>
+</head>
+<body>
+    
+    <script>
+        let depositoMensal = parseFloat(prompt("Depósito mensal: "))
+        let jurosTaxa = parseFloat(prompt("Taxa do juros (%): ")) / 100 // 1% == 0.01 -> 1 / 100
+
+        let montante = 0 // montante = valor final
+
+        for (let contador = 0; contador < 12; contador++)
+        {
+            montante += depositoMensal // Somando o depósito mensal ao montante
+            montante += montante * jurosTaxa // somando o 'valor do juros' sobre o montante
+        }
+
+        document.writeln("Montante Final: R$" + montante.toFixed(2))
+    </script>
+
+</body>
+</html>

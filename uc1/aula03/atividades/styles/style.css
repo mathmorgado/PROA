@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    margin-top: 0px;
+}
+
+main {
+    margin: auto;
+    margin-top: 0px;
+    width: 90%;
+    height: 95vh;
+    background-color: gray;
+}
+
+header {
+  text-align: center;  
+}
+
+#header1 {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px;
+    height: 10%;
+}
+
+#nav1 {
+    background-color: blue;
+    height: 5%;
+}
+
+#nav2 {
+    text-align: center;
+    background-color: bisque;
+    width: 20%;
+    height: 80%;
+    float: left;
+}
+
+section {
+    width: 60%;
+    height: 80%;
+    padding: 10px;
+    background-color: pink;
+    text-align: center;
+    float: left;
+}
+
+#header2 {
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#header2 h1 {
+    color: black;
+}
+
+#div-main {
+    margin: 15px 0;
+    height: 35%;
+    background-color: rgb(170, 128, 73);
+}
+
+p {
+    margin: 15px 0;
+    height: 20%;
+    text-align: left;
+    background-color: cadetblue;
+    color: black;
+    clear: left;
+}
+
+.div-box {
+    position: relative;
+    margin: 5px 0;
+    width: 31.65%;
+    height: 27%;
+    background-color: gray;
+    float: left;
+}
+
+#div-meio {
+    margin: 5px 2.5%;
+}
+
+aside {
+    text-align: center;
+    width: 20%;
+    height: 80%;
+    background-color: palevioletred;
+    float: left;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 5%;
+    clear: left;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        
+        <fieldset>
+            <legend>
+                Componentes
+            </legend>
+
+            <label>Entre com o seu nome: </label>
+            <input type="text" name="nome" size="50" maxlength="50">
+            <br>
+            <label>Entre com o seu email: </label>
+            <input type="email" name="email" size="30" maxlength="30">
+            <br>
+            <label>Entre com a sua senha: </label>
+            <input type="password" name="nome" size="10" maxlength="10">
+            
+
+            <br>
+
+            <label>Você utiliza no seu site frequentemente?</label>
+            <input type="radio" name="resp" value="sim">Sim        
+            <input type="radio" name="resp" value="nao">Não
+            
+            <br>
+
+            <label>Qual Browser você costuma utilizar?</label>
+            <input type="checkbox" name="opcao1" value="fire">Firefox
+            <input type="checkbox" name="opcao2" value="chrome">Chrome
+            <input type="checkbox" name="opcao3" value="IE">Internet Explorer
+            <input type="checkbox" name="opcao4" value="safa">Safari
+            <input type="checkbox" name="opcao5" value="oper">Opera
+
+            <br>
+
+            <label>Selecione uma área de atuação</label>
+            <select name="area-ocupacao">
+                <option>Marketing</option>
+                <option>Comercial</option>
+                <option>Vendas</option>
+                <option>WEB</option>
+                <option>Administração</option>
+            </select>
+
+            <br>
+
+            <label>Entre com o seu CPF:</label>
+            <input type="text" required name="cpf" placeholder="Digite aqui...">
+
+            <br>
+
+            <label>Entre com um número:</label>
+            <input type="number" min="10" max="20">
+
+            <br>
+
+            <label>Selecione uma data</label>
+            <input type="date">
+
+            <br>
+
+            <label>Faça uma pesquisa</label>
+            <input type="search" url="#">
+
+            <br>
+
+            <label>Escolha uma cor</label>
+            <input type="color">
+            <br>
+
+            <progress value="30" max="100">30%</progress>
+            <br>
+            <meter min="0" max="100" low="40" high="90" optimum="100" value="52"></meter>
+
+            <br>
+
+            <label>Deixe aqui o seu comentário</label>
+            <br>
+            <textarea placeholder="Comente aqui" cols="30" rows="10"></textarea>
+
+            <br>
+
+            <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+    
+</body>
+</html>

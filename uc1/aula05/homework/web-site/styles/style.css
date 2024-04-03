@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url(../components/images/guitarra_fundo_body.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    position: relative;
+
+    width: 90%;
+    height: auto;
+    margin: auto;
+
+    background-color: rgba(165, 42, 42, 0.527);
+}
+
+header {
+    position: relative;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    width: 100%;
+    height: 20vh;
+    padding: 20px;
+    padding-right: 33px;
+    
+    background-image: url(../components/images/guitarras_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+
+    width: 40%;
+}
+
+nav a {
+    width: 20%;
+    height: 100%;
+    padding: 10px 0;
+    
+    font-size: 0.93rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s;
+    color: brown;
+    background-color: white;
+}
+
+nav a:hover {
+    transform: translateY(20px);
+}
+
+section {
+    margin: 20px 0;
+    height: 50vh;
+}
+
+.content {
+    width: 45%;
+    height: 80%;
+    padding: 40px;
+
+    color: white;
+    background-color: rgb(170, 122, 130);
+}
+
+.content h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+
+/*SEÇÃO QUEM SOMOS*/
+#quem-somos {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+
+    background-color: rgb(172, 0, 0);
+}
+
+#loja-imagem {
+    width: 45%;
+    height: 80%;
+}
+
+#loja-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*SEÇÃO INSTRUMENTOS*/
+#instrumentos {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: aliceblue;
+}
+
+.card-instrumentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    width: 20%;
+    height: 90%;
+    
+    background-color: white;
+}
+
+.imagem-instrumento {
+    width: 100%;
+    height: 35%;
+}
+
+.imagem-instrumento img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-instrumentos p {
+    text-align: center;
+}
+
+.card-instrumentos span {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: red;
+}
+
+/*SEÇÃO ENDEREÇO*/
+#endereco {
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    color: white;
+    background-color: rgb(146, 72, 37);
+}
+
+#mapa {
+    width: 45%;
+    height: 80%;
+}
+
+#mapa img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/*SEÇÃO CONTATO*/
+#contato {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 20px;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+
+    width: 45%;
+    padding: 0 20px;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 15px;
+}
+
+textarea {
+    width: 55%;
+}
+
+button {
+    padding: 15px;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 45%;
+}
+
+#social-media h2 {
+    margin-bottom: 15px;
+    color: rgb(0, 0, 185);
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box-social-media {
+    width: 10%;
+    height: auto;
+    margin: 0 1px;
+}
+
+.box-social-media img {
+    width: 100%;
+    height: 100%;
+}
+
+/*SEÇÃO FOOTER*/
+footer {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 15vh;
+
+    color: white;
+    background-color: black;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.747);
+}
+
+footer .social-media-container {
+    width: 20%;
+    height: auto;
+}
+
+footer .box-social-media {
+    margin: 0 15px;
+}

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+}
+
+div {
+    background-color: aquamarine;
+    margin: 5px;
+}
+
+#camada1 {
+    position: relative;
+    width: 150px;
+    height: 170px;
+    background-color: rgba(216, 3, 216, 0.623);
+    border: 2px solid black;
+    text-align: center;
+    float: left; /* alinha/encaixa os elementos lado a lado na esquerda*/
+}
+
+#camada2 {
+    position: relative;
+    width: 150px;
+    height: 170px;
+    background-color: rgba(240, 255, 32, 0.788);
+    border: 2px solid black;
+    text-align: center;
+    float: right; /* coloca lado a lado, mas alinhado na direita*/
+}
+
+#camada3 {
+    position: relative;
+    width: 150px;
+    height: 170px;
+    background-color: rgba(255, 39, 39, 0.801);
+    border: 2px solid black;
+    clear: left; /* Quebra a sequência de float | limpa o encaixa*/
+    text-align: center;
+}
+
+#fundo {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+}

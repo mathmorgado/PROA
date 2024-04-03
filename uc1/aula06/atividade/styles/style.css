@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin-top: 0px;
+}
+
+
+main {
+    position: relative;
+
+    width: 95%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 0px;
+}
+
+header {
+    text-align: center;  
+}
+
+#header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 13%;
+    
+    background-color: black;
+}
+
+#nav1 {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 5%;
+    background-color: blue;
+}
+
+#nav1 a {
+    text-decoration: none;
+    font-weight: 300;
+}
+
+#nav2 {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 15%;
+    height: 80%;
+    float: left;
+    
+    background-color: white;
+}
+
+#nav2 a {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 9%;
+    padding-left: 10px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.664);
+
+    /*Atribuir o 'transition' no próprio elemento, faz com que haja uma transição entre as duas fases: Normal -> Hover e Hover -> Normal. Caso coloque o transition só no hover, você limita a transição somente da fase normal -> hover.*/
+    transition: 0.3s all;
+    text-decoration: none;
+    background-color: gray;
+}
+
+#nav2 a:hover {
+    background-color: black;
+    border-bottom: 1px solid orange;
+}
+
+section {
+    position: relative;
+
+    width: 70%;
+    height: 80%;
+    padding: 10px;
+    
+    float: left;
+    text-align: center;
+}
+
+#header2 {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#header2 h1 {
+    color: black;
+}
+
+#div-main {
+    margin: 15px 0;
+    height: 40%;
+    background-color: rgb(170, 128, 73);
+}
+
+p {
+    height: 20%;
+    margin: 15px 0;
+    padding: 5px;
+
+    color: black;
+    text-align: left;
+    background-color: rgba(153, 252, 255, 0.705);
+}
+
+.container {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 25%;
+}
+
+.container div {
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+#sol {
+    background-color: gray;
+}
+
+aside {
+    width: 15%;
+    height: 80%;
+    float: left;
+
+    text-align: center;
+    background-color: palevioletred;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    height: 5%;
+    clear: left;
+
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+
+/*Visualização Tablet*/
+@media only screen and (min-width:481px) {
+    @media only screen and (max-width:720px)
+    {
+        #nav2, aside {
+            display: none; /*oculta o componente, retirando o espaço ocupado*/
+        }
+
+        section {
+            width: 100%;
+        }
+
+        #nav1 {
+            display: flex;
+            flex-wrap: wrap;
+            height: 60px;
+        }
+
+        #nav1 a {
+            width: 33.33%;
+            height: 30px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (min-width:350px) {
+    @media only screen and (max-width:720px)
+    {
+        #nav2, aside {
+            display: none; /*oculta o componente, retirando o espaço ocupado*/
+        }
+
+        section {
+            width: 100%;
+        }
+
+        #nav1 {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+
+            height: auto;
+            background-color: white;
+        }
+
+        #nav1 a {
+            width: 100%;
+            height: 30px;
+
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.445);
+            background-color: blue;
+        }
+
+        p {
+            display: none;
+        }
+
+        section {
+            height: 110vh;
+        }
+
+        section .container {
+            display: flex;
+            flex-direction: column;
+            height: 54%;
+        }
+
+        section .container div{
+            width: 100%;
+            height: 30%;
+            margin-bottom: 10px;
+        }
+    }
+}

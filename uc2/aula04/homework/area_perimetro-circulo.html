@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área e perímetro do círculo</title>
+</head>
+<body>
+    <script>
+        let raioCirculo = parseFloat(prompt("Raio do círuclo: "))
+        
+        let perimetro = 2 * Math.PI * raioCirculo
+        let area = Math.PI * raioCirculo**2
+
+        document.writeln("Perímetro da circunferência: " + perimetro.toFixed(2))
+        document.writeln("<br>Área da circunferência: " + area.toFixed(2))
+    </script>
+</body>
+</html>

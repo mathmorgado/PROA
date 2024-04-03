@@ -1,0 +1,20 @@
+body {
+    background-image: url(../components/images/fundo.jpg);
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+h1, h3, p {
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+a {
+    display: block;
+    text-align: center;
+}

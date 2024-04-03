@@ -1,0 +1,127 @@
+/* rodape */
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    margin-top: 200px;
+    
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 80%;
+    max-width: 1700px;
+}
+
+.footer-contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #FFF;
+ 
+}
+
+   a i{
+    text-decoration: none;
+    color: #FFF;
+   }
+
+.footer-redes{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.whatsapp{
+    background-color: #25e363;
+}
+
+.facebook{
+    background-color: #4267E3;
+}
+
+.instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807 );
+}
+
+.whatsapp, .facebook, .instagram{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-links a{
+    text-decoration: none;
+    transition: all 0.4s;
+ 
+}
+
+.footer-links li{
+    list-style: none;
+}
+
+.footer-links a:hover{
+    color: #FF5F00;
+}
+
+.footer-redes a{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.input-group{
+    display: flex;
+}
+
+.input-group input{
+    all: unset;
+    background-color: rgb(66, 66, 66);
+    padding: 10px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.input-group button{
+    height: 100%;
+    width: 40px;
+    background-color: #FF5F00;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    color: #FFF;
+}
+
+.input-group button i{
+    font-size: 1.2rem;
+}
+
+.footer-comercial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    font-weight: 100;
+    color: #fff;
+}

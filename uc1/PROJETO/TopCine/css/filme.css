@@ -1,0 +1,328 @@
+/* Importanto fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* zerando todos espaçamentos padrões */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+.cabecalho{
+    position: fixed;
+}
+
+.titulo-1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.titulo-2{
+font-size: 1.5rem;
+}
+
+.titulo-3{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.titulo-section{
+        padding: 30px 0px;
+    
+}
+
+.subtitulo {
+font-size: 15px;
+font-weight: 400;
+
+}
+
+/* -------------------------- */
+
+body {
+    background-color: rgb(22, 22, 22);
+}
+
+.titulo-negrito {
+    font-size: 1rem;
+
+}
+
+
+
+/* Conteudo principal da pagina */
+.conteudo {
+    width: 100%; 
+    max-width: 1700px;  
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+/* Section 1 - Informações Gerais */
+
+.section1-informacoes-gerais {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 700px;
+    gap: 50px;
+    margin-top: 100px;
+
+    /* background-image: url('/imagens/oppenheimerbanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+
+.container-poster {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 500px;
+    height: auto;
+}
+
+.img-poster {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Informações principais */
+
+.informacoes-principais {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    color: #FFF;
+    font-size: 30px;
+    gap: 5px;
+    overflow: auto;
+    text-align: justify;
+}
+
+
+
+.data-categoria {
+    display: flex;
+    font-size: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    gap: 10px;
+}
+
+h6 {
+    font-weight: 300;
+}
+
+.data-categoria ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    width: 300px;
+    font-weight: 300;
+    gap: 0px;
+
+}
+
+.avaliacao {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.avaliacao img{
+    height: 80%;
+}
+
+
+/* Sinopse */
+
+.container-sinopse {
+    margin-top: 10px;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.container-sinopse p {
+    margin-top: 10px;
+}
+
+
+.container-sinopse p{
+    font-size: 1rem;
+}
+
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.producao {
+    margin-top: 10px;
+}
+
+.container-producao {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 400px;
+    height: auto;
+    gap: 24px;
+    margin-top: 10px;
+}
+
+/* Elenco completo */
+
+
+.section3-elenco,
+.section4-recomendados{
+    width: 100%;
+    border-top: 1px solid #ff5e00c7;
+    margin-top: 70px;
+    color: #FFF;
+
+}
+
+/* Trailer */
+
+.section2-trailer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    color: #FFF;
+    height: 600px;
+    width: 100%;
+    border-top: 1px solid #ff5e00c7;
+    margin-top: 30px;
+}
+
+.titulo-trailer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    /* border-top: 2px solid red; */
+    padding: 30px 0px;
+    margin-top: 30px;
+}
+
+.container-trailer {
+    height: 600px;
+    width: 900px;
+    background-color: red;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+/* .preview-trailer {
+    height: 100%;
+    width: 100%;
+} */
+
+/* Plataformas */
+
+.container-plataformas {
+    margin-top: 30px;
+}
+
+.container-btn {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    height: auto;
+}
+
+.btn-plataforma {
+    background-color: transparent;
+    color: #FFF;
+    height:50px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    border-bottom: 1px solid #ff5e00c7;
+    transition: 0.4s all;
+}
+
+
+
+.btn-plataforma img{
+    height: 90%;
+}
+
+.btn-plataforma:hover {
+    transform: translateY(-5px);
+    
+}
+
+.icon-plataforma {
+    height: 80%;
+}
+
+.icon-plataforma-amazon {
+    height: 60%;
+}
+
+/* Recomendações */
+
+.container-elenco, .container-recomendacao {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    /* as 2 propriedades abaixo tornam o container responsivo sem itens invandindo uma area indesejada */
+    height: auto;
+    flex-wrap: wrap;
+}
+
+
+.nome-filme {
+    color: #FFF;
+}
+
+@media only screen and (max-width:1024px ) {
+    body, html{
+        height: 100%;
+        width: 100%;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .section1-informacoes-gerais {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: 50px;
+
+    }
+
+    .informacoes-principais, .avaliacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center ;
+    }
+}

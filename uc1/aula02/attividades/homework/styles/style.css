@@ -1,0 +1,75 @@
+#fundo {
+    position: relative;
+    height: 95vh;
+    width: 80%;
+    margin: auto;
+}
+
+#topo {
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgba(0, 139, 139, 0.651);
+}
+
+#lado-esquerdo {
+    position: relative;
+    height: 80%;
+    width: 10%;
+    background-color: rgb(158, 188, 206);
+    float: left
+}
+
+#conteudo {
+    position: relative;
+    height: 80%;
+    width: 75%;
+    background-color: rgba(128, 128, 128, 0.692);
+    float: left
+}
+
+#lado-direito {
+    position: relative;
+    height: 80%;
+    width: 15%;
+    background-color: rgb(158, 188, 206);
+    float: left
+}
+
+#branco1 {
+    position: relative;
+    margin: 2.5px;
+    height: 25%;
+    background-color: white;
+}
+
+#branco2 {
+    position: relative;
+    margin: 2.5px;
+    height: 25%;
+    background-color: white;
+}
+
+#imagem {
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    z-index: 1;
+
+    width: 200px;
+    height: 200px;
+}
+
+#imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+#rodape {
+    position: relative;
+    height: 5%;
+    background-color: rgb(0, 174, 255);
+    clear: left;
+}
+

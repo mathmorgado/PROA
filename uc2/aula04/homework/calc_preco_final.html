@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular o preço final</title>
+</head>
+<body>
+
+    
+    <script>
+        let preco = parseFloat(prompt("Preço: "))
+        let quantidadeComprada = parseInt(prompt("Quantidade comprada: "))
+
+        let precoFinal = quantidadeComprada * preco
+
+        if (quantidadeComprada > 10)
+        {
+            precoFinal -= precoFinal * 0.1
+            document.write("Total a pagar com 10% de desconto: R$" + precoFinal)
+        }
+        else
+        {
+            document.writeln("Total a pagar: R$" + precoFinal)
+        } 
+    </script>
+
+</body>
+</html>

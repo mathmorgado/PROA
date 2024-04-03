@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<head>
+<title>Dynamic Drive DHTML Scripts- jQuery Gooey (Lava Lamp) Menu</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+<script src="gooeymenu.js">
+	
+	/***********************************************
+	 * Gooey Menu Script (c) Dynamic Drive (www.dynamicdrive.com)
+	 * Please keep this notice intact
+	 * Visit http://www.dynamicdrive.com/ for this script and 100s more.
+	 ***********************************************/
+	
+</script>
+
+<link rel="stylesheet" type="text/css" href="../ddincludes/mainstylev2.css" />
+<link rel="stylesheet" type="text/css" href="gooeymenu.css" />
+
+<style type="text/css">
+#contentarea ul{
+margin-bottom:3em;
+}
+
+hr{
+margin:auto;
+color:black;
+}
+
+ul#gooeymenu1b{
+text-align:left;
+margin-top:2em;
+}
+
+ul#gooeymenu1b li.active, ul#gooeymenu1b2 li.active{
+background:url(gelbuttonleft2.gif) top left no-repeat, url(gelbuttonright2.gif) top right no-repeat, url(gelbuttoncenter2.gif) top center repeat-x;
+}
+
+ul#gooeymenu1c li.active{
+background:url(gelbuttonleft3.gif) top left no-repeat, url(gelbuttonright3.gif) top right no-repeat, url(gelbuttoncenter3.gif) top center repeat-x;
+}
+
+ul#gooeymenu1d li.active{
+background:url(gelbuttonleft4.gif) top left no-repeat, url(gelbuttonright4.gif) top right no-repeat, url(gelbuttoncenter4.gif) top center repeat-x;
+}
+</style>
+
+</head>
+
+<body>
+
+<script src="http://www.dynamicdrive.com/ddincludes/scriptsv21.js"></script>
+<div id="topsection">
+
+<div id="topmenu">
+<div id="sitelogo">
+<a href="http://www.dynamicdrive.com/"><img border="0" src="http://www.dynamicdrive.com/ddincludes/ddlogov2.png"></a>
+</div>
+
+<a class="dd-animateddrawer" id="ddsite-mobiletoggle" href="#">
+<span></span>
+</a>
+
+<ul id="ddsite-topmenuul">
+<li><a href="http://www.dynamicdrive.com/new.htm" id="firstmenuitem">New</a></li>
+<li><a href="http://www.dynamicdrive.com/revised.htm">Revised</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://www.dynamicdrive.com/style/" class="dd-anchorclass" rel="dd-submenu">CSS Codes</a></li>
+<li><a href="http://tools.dynamicdrive.com/" class="dd-anchorclass" rel="dd-submenu2">Tools</a></li>
+<li><a href="http://blog.dynamicdrive.com">Blog</a></li>
+
+<li id="search">
+<form id="topform" method="get" action="http://www.dynamicdrive.com/search/search.php">
+<input type="text" name="zoom_query" id="zoom_query" size="20" class="zoom_searchbox topsearchbox" placeholder="search">
+<input id="query_submit" type="image" src="http://www.dynamicdrive.com/ddincludes/magnify.gif" />
+<input name="zoom_per_page" id="zoom_per_page" type="hidden" value="10" />
+<input name="zoom_and" id="zoom_and" type="hidden" value="1" />
+<input type="hidden" name="zoom_sort" value="0" />
+</form>
+</li>
+</ul>
+</div>
+
+<div id="dd-submenu" class="dd-anylinkcsscols">
+
+<div class="column">
+	<b>CSS Codes</b>
+	<ul>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C1/">Horizontal CSS Menus</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C2/">Vertical CSS Menus</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C4/">Image CSS</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C6/">Form CSS</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C5/">DIVs and containers</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C7/">Links &amp; Buttons</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C17/">CSS3 demos</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C8/">Other</a></li>
+	</ul>
+</div>
+
+<div class="column">
+	<b>CSS Layouts</b>
+	<ul>
+	<li><a href="http://www.dynamicdrive.com/style/layouts/" class="title">CSS Layouts</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/layouts/category/C9/">Two Columns</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/layouts/category/C10/">Three Columns</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/layouts/category/C12/">Fixed layouts</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/layouts/category/C13/">Liquid Layouts</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/layouts/category/C11/">CSS Frames</a></li>
+	</ul>
+</div>
+
+</div>
+
+<div id="dd-submenu2" class="dd-anylinkcsscols">
+
+<div class="column">
+	<ul>
+	<li><a href="http://tools.dynamicdrive.com/imageoptimizer/">Image Optimizer</a></li>
+	<li><a href="http://tools.dynamicdrive.com/favicon/">FavIcon Generator</a></li>
+	<li><a href="http://tools.dynamicdrive.com/faviconeditor/">FavIcon Editor</a></li>
+	<li><a href="http://www.cssdrive.com/cssautoprefixer/">CSS Autoprefixer <span style="color:red;margin-left:6px">new</span></a></li>
+	<li><a href="http://tools.dynamicdrive.com/animatedgif/">Animated Gif</a></li>
+	<li><a href="http://www.dynamicdrive.com/emailriddler/">Email Riddler</a></li>
+  <li><a href="http://tools.dynamicdrive.com/password/">.htaccess Password</a></li>
+	</ul>
+</div>
+
+<div class="column">
+	<ul>
+	<li><a href="http://tools.dynamicdrive.com/userban/">.htaccess Banning</a></li>
+  <li><a href="http://tools.dynamicdrive.com/gradient/">Gradient Image</a></li>
+  <li><a href="http://tools.dynamicdrive.com/button/">Button Maker</a></li>
+	<li><a href="http://tools.dynamicdrive.com/imagetobase64">Image to Base64 String</a></li>
+	<li><a href="http://tools.dynamicdrive.com/ribbon/">Ribbon Rules</a></li>
+	<li><a href="http://tools.dynamicdrive.com/listscrubber/">List Scrubber Tool</a></li>
+	<li><a href="http://www.ddwhois.com/">DD Whois Service</a></li>
+	</ul>
+</div>
+
+</div>
+
+<div id="topbanner">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript" src="http://www.dynamicdrive.com/ddincludes/adbannerv2.js?refresh=4"></script>
+</div>
+
+</div>
+
+<p id="pathlinks"><a href="http://www.dynamicdrive.com/">Home</a> <img border="0" src="../ddincludes/arrow2.gif" width="8" height="10" />                                                        
+<a href="http://www.dynamicdrive.com/dynamicindex1/">Menu and Navigation</a> <img border="0" src="../ddincludes/arrow2.gif" width="8" height="10" />                                                        Here</p>
+
+<div id="maincontainer">
+
+<div id="contentwrapper">
+<div id="contentcolumn">
+    
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "40b54cb4-9462-4498-90ff-0b73ceacc87b", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
+
+<div id="dd-socialshare">
+
+<span class='st_facebook_large' displayText='Facebook'></span>
+<span class='st_twitter_large' displayText='Tweet'></span>
+<span class='st_delicious_large' displayText='Delicious'></span>
+<span class='st_googleplus_large' displayText='Google +'></span>
+<span class='st_email_large' displayText='Email'></span>
+
+</div>
+
+
+
+<div id="scriptheader"><span class="compatlist">FF2+ IE7+ Opr8+</span> 
+  <h3>jQuery Gooey Menu</h3></div> 
+<div id="scriptheaderFoot"><span class="rightit"></span> <b>Author:</b>  
+  <span id="ddauthor">Dynamic Drive</span></div>
+
+      <p align="left"><strong>Note: </strong>July 18th, 15'- Fixed issue with 
+		gooey effect when menu drops spills over to multiple lines. Both .js and 
+		.css file&nbsp; updated.</p>
+<p align="left"><strong>Description: </strong>jQuery Gooey Menu uses the 
+		popular &quot;<a target="_blank" href="http://devthought.com/2007/01/29/cssjavascript-true-power-fancy-menu/">lava 
+		lamp</a>&quot; effect to create CSS menus with a moving gooey background effect. 
+		Whenever the mouse moves over a menu item, the desired style that 
+		indicates the selected menu item follows the mouse to that item, 
+		smoothly highlighting the currently active item. Each menu is simply a 
+		standard UL list and very easy to customize, including the gooey effect 
+		itself.</p>
+<p align="left">The gooey effect is simply an absolutely positioned LI element 
+dynamically added to the end of the menu. It is styled using just CSS to create 
+the desired gooey menu look. Groovy!</p>
+<p align="left"><strong>Demos: </strong></p>
+    <p align="left"><!--webbot bot="HTMLMarkup" startspan --><ul id="gooeymenu1" class="gelbuttonmenu">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/" class="selected">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu1', selectitem:1})
+</script>
+
+<br />
+
+<ul id="gooeymenu2" class="solidblockmenu">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu2', selectitem:1, fx:'swing'})
+</script>
+
+<br />
+
+<ul id="gooeymenu3" class="underlinemenu">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/" class="selected">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu3', fxtime:250})
+</script>
+
+<br />
+
+<ul id="gooeymenu4" class="framemenu">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu4', snapdelay:500})
+</script><!--webbot bot="HTMLMarkup" endspan i-checksum="32068" --></p>
+    <hr size="1">
+    <p align="left"><strong>Directions </strong>
+    <a target="win2" href="gooeymenu_dev.htm"><img src="../dview.gif" width="115" height="19"
+    alt="Developer's View" border="0"></a></p>
+      <p align="left"><b>Step 1:</b> This script uses the following external files. 
+      Download them below (right click, and select &quot;Save As&quot;):</p>
+<ul>
+	<li>
+	<a href="gooeymenu.js">gooeymenu.js</a></li>
+	<li>
+	<a href="gooeymenu.css">gooeymenu.css</a></li>
+	<li>
+	<img border="0" src="gelbuttonleft.gif" width="13" height="36">
+	<img border="0" src="gelbuttoncenter.gif" width="61" height="36">
+	<img border="0" src="gelbuttonright.gif" width="15" height="36"> (3 images 
+	that make up the gel button look in the first menu. Also see 
+	<a href="#bonus">bonus section</a> below for more colors)</li>
+</ul>
+<p align="left"><b>Step 2:</b> Add the below code to the HEAD section of your 
+page:</p>
+    <form><div
+      align="left">
+<a class="selectall" href="javascript:highlight(0)">Select All</a><br>
+      <textarea class="codecontainer" rows="8" name="S2" cols="45" wrap="virtual"><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+<script src="gooeymenu.js">
+
+/***********************************************
+* Gooey Menu Script (c) Dynamic Drive (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="gooeymenu.css" /></textarea></div>
+    </form>
+      <p align="left"><strong>Step 2: </strong>Then, add the below sample markup 
+		to your page, which contains the 4 UL menus you see above:</p>
+    <form><p><a class="selectall" href="javascript:highlight(1)">Select All</a><br>
+      <textarea class="codecontainer" rows="8" name="S1" cols="45" wrap="virtual"><ul id="gooeymenu1" class="gelbuttonmenu">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/" class="selected">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu1', selectitem:1})
+</script>
+
+
+
+<hr />
+
+<ul id="gooeymenu2" class="solidblockmenu">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu2', selectitem:1, fx:'swing'})
+</script>
+
+
+
+
+<hr />
+
+<ul id="gooeymenu3" class="underlinemenu">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/" class="selected">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu3', fxtime:250})
+</script>
+
+
+
+
+<hr />
+
+<ul id="gooeymenu4" class="framemenu">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu4', snapdelay:500})
+</script>
+</textarea></p>
+    </form>
+      <h3 align="left"><u>Basic menu setup</u></h3>
+      <p align="left">To set up a Gooey Menu, simply define the manu's markup on 
+		the page, then call the function <code>gooeymenu.setup()</code> to 
+		initialize the effect on it:</p>
+<p class="codehighlight" align="left">&lt;ul id=&quot;<b>gooeymenu1</b>&quot; class=&quot;gelbuttonmenu&quot;&gt;<br>
+&lt;li&gt;&lt;a href=&quot;http://www.dynamicdrive.com/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;http://www.dynamicdrive.com/style/&quot;&gt;CSS Codes&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;http://www.dynamicdrive.com/forums/&quot;&gt;Forums&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;http://tools.dynamicdrive.com&quot;&gt;Tools&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;http://www.javascriptkit.com/&quot; class=&quot;selected&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;http://www.cssdrive.com&quot;&gt;CSS Gallery&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+<br>
+<b>&lt;script&gt;<br>
+gooeymenu.setup({id:'gooeymenu1', selectitem:1})<br>
+&lt;/script&gt;</b></p>
+<p align="left"> <b> <code>gooeymenu.setup()</code></b> accepts the following options, 
+of which the &quot;id&quot; option is the only required one:</p>
+  <table border="1" cellpadding="3" cellspacing="0">
+    <tr>
+      <td width="25%" bgcolor="#D8EA99" valign="top"><b>option</b></td>
+      <td width="75%" bgcolor="#D8EA99" valign="top"><b>Description</b></td>
+    </tr>
+    <tr>
+      <td width="25%" valign="top"><code>
+		<span style="background-color: #EFEFEF">id: &quot;string&quot;</span></code><p>
+		<font color="#FF0000"><i>Required</i></font></td>
+      <td width="75%" valign="top">Specifies the ID of the menu's UL container. 
+		Required. For example:<p class="codehighlight">&lt;script&gt;<br>
+gooeymenu.setup({id:'gooeymenu1'})<br>
+&lt;/script&gt;</td>
+    </tr>
+    <tr>
+      <td width="25%" valign="top"><code>selectitem: interger</code><p>
+		<i>defaults to undefined</i></td>
+      <td width="75%" valign="top">Sets the menu item that should be selected by 
+		default with the gooey effect when the page loads. This also affects 
+		which menu item the effect snaps back to when the mouse rolls out of the 
+		menu entirely. It should be an integer, where 0=1st menu item, 1=2nd 
+		menu item etc.<p>See &quot;<a href="#defaultselect">Two ways to set default selected menu 
+		item</a>&quot; below as well.</p>
+		</td>
+    </tr>
+    <tr>
+      <td width="25%" valign="top"><code>fx: &quot;string&quot;</code><p>defaults to &quot;easeOutBack&quot;</td>
+      <td width="75%" valign="top">Sets the easing type of the gooey effect. The 
+		default is &quot;<code>easeOutBack</code>&quot;, which creates that elastic forth 
+		then back animation. The two other possible types are &quot;<code>swing</code>&quot; 
+		and &quot;<code>linear</code>&quot;. For example:<p class="codehighlight">&lt;script&gt;<br>
+gooeymenu.setup({id:'gooeymenu1', fx:'swing'})<br>
+&lt;/script&gt;</td>
+    </tr>
+	<tr>
+      <td width="25%" valign="top"><code>fxtime: milliseconds</code><p>defaults 
+		to 500</td>
+      <td width="75%" valign="top">Sets the duration of the gooey effect, in 
+		milliseconds. Defaults to 500, or 1/2 second.</td>
+    </tr>
+	<tr>
+      <td width="25%" valign="top"><code>snapdelay: milliseconds</code><p>
+		defaults to 300</td>
+      <td width="75%" valign="top">Sets the delay before the gooey effect snaps 
+		back to the default selected menu item (if one is specified) when the 
+		mouse moves out of the menu entirely. Defaults to 300 milliseconds.</td>
+    </tr>
+    </table>
+<h3 align="left"><u><a name="defaultselect"></a>Two ways to set default selected menu item</u></h3>
+<p align="left">There are two ways to select the menu item that gets the gooey 
+effect by default when the page loads. It also affects which menu item the 
+effect snaps back to when the mouse rolls out of the menu entirely. The first 
+method is just to modify the menu's HTML markup, by adding a CSS class of 
+&quot;<code>selected</code>&quot; into the desired menu item:</p>
+<p class="codehighlight" align="left">&lt;ul id=&quot;<b>gooeymenu1</b>&quot; class=&quot;gelbuttonmenu&quot;&gt;<br>
+&lt;li&gt;&lt;a href=&quot;http://www.dynamicdrive.com/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;http://www.dynamicdrive.com/style/&quot;&gt;CSS Codes&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;http://www.dynamicdrive.com/forums/&quot;&gt;Forums&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;http://tools.dynamicdrive.com&quot;&gt;Tools&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;http://www.javascriptkit.com/&quot; 
+<font color="#FF0000">class=&quot;selected&quot;</font>&gt;JavaScript&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;http://www.cssdrive.com&quot;&gt;CSS Gallery&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;</p>
+<p align="left">That's it- the &quot;JavaScript&quot; item will be selected automatically 
+when the menu is initialized.</p>
+<p align="left">The second method is to define the &quot;<code>selectitem</code>&quot; 
+parameter when calling <b> <code>gooeymenu.setup()</code></b> to initialize the 
+menu, for example:</p>
+<p class="codehighlight" align="left">&lt;script&gt;<br>
+gooeymenu.setup({id:'gooeymenu1', selectitem:0})<br>
+&lt;/script&gt;</p>
+<p align="left">This causes the very first menu item to be selected.</p>
+<p align="left">If both the 1st and 2nd method of selecting a default menu item 
+is detected, the 2nd method will always override the 1st. If neither is used, 
+then no menu item will be selected from the get go.</p>
+      <h3 align="left"><u>Customizing the look of the gooey effect</u></h3>
+      <p align="left">Here comes the fun (I promise!) part- customizing the 
+		gooey effect itself. As mentioned at the very top, the effect is simply 
+		created by styling an absolutely positioned LI element that's 
+		dynamically added to the end of the menu. Inside the
+		<a href="gooeymenu.js">.js file</a>, this markup is stored in the line:</p>
+<p class="codehighlight" align="left">effectmarkup: '&lt;li class=&quot;active&quot;&gt;&lt;/li&gt;',</p>
+<p align="left">Not that you have to concern yourself with that. Customizing the 
+look of the gooey effect all takes place inside your .css file, by default <code>
+gooeymenu.css</code>. Specifically, you'll want to style the menu's &quot;<code>li.active</code>&quot; 
+element. Peering inside <code><a href="gooeymenu.css">gooeymenu.css</a></code>, 
+the following shows how the gooey style of the gel buttons menu is created:</p>
+<p align="left"><b>Target rule for the Gooey Gel Buttons Menu:</b></p>
+<p align="left"><!--webbot bot="HTMLMarkup" startspan --><ul id="gooeymenu1b" class="gelbuttonmenu">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/" class="selected">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu1b', selectitem:1})
+</script><!--webbot bot="HTMLMarkup" endspan i-checksum="7223" --></p>
+<p class="codehighlight" align="left">ul.gelbuttonmenu li.active{ /*style of LI 
+that gets dynamically added to menu to create background effect*/<br>
+position:absolute;<br>
+width:0;<br>
+background:lightblue;<br>
+background:url(gelbuttonleft.gif) top left no-repeat, url(gelbuttonright.gif) 
+top right no-repeat, url(gelbuttoncenter.gif) top center repeat-x;<br>
+}</p>
+<p align="left">As you can see, nothing magical here. &quot;<code><coded>position:absolute</code>&quot; 
+should always be defined at a minimum. The rest is styling this &quot;active&quot; LI so 
+it looks like a gel button. I'm using CSS3's multiple backgrounds capability to 
+accomplish this, by defining a left, center, and right background image that's 
+sliced from a button image to re-create the look. For browsers that don't 
+support multiple background images, they will fallback to a solid blackground 
+color of lightblue instead. The other considerations are simply to ensure the 
+rest of the menu work well with the gel button background, such as giving the menu 
+links sufficient padding to they are tall enough to show the gel button 
+background without it being partially clipped.</p>
+<p align="left">The following show how the &quot;frame&quot; style of the last &quot;Frame&quot; 
+menu example is created:</p>
+<p align="left"><b>Target rule for the Gooey Frames Menu:</b></p>
+<p class="codehighlight" align="left">ul.framemenu li.active{ /*style of LI that 
+gets dynamically added to menu to create background effect*/<br>
+position:absolute;<br>
+width:0;<br>
+border:4px solid orange;<br>
+-moz-box-shadow: 0 0 4px rgba(120,120,120,0.7);<br>
+-webkit-box-shadow: 0 0 4px rgba(120,120,120,0.7);<br>
+box-shadow: 0 0 4px rgba(120,120,120,0.7);<br>
+}</p>
+<p align="left">The frame itself is rendered just with CSS's <code>border</code> 
+property, while the subtle shadow beneath it using CSS3's
+<a href="http://www.dynamicdrive.com/style/csslibrary/item/css3_box_shadows_box_shadow_property/">
+box shadow</a>. The other consideration in this case is to make sure the 4 
+padding (top/bottom, left/right) for each menu link is such that the &quot;frame&quot; 
+appears centered around the link. </p>
+<p align="left">As you can see, styling and customizing the gooey effect for 
+your menu is actually very straightforward. Just remember you're styling a LI 
+with CSS class &quot;active&quot; that gets added to the end of the menu and is absolutely 
+positioned. Any style you apply to this LI gets shown beneath the menu links as 
+the former LI moves around behind the menu.</p>
+      <h3 align="left"><u><a name="bonus"></a>Bonus- Four gel button color variations</u></h3>
+      <p align="left">Here's a bonus for folks not so comfortable around a 
+		graphics editor- below are 4 sets of the gel button image used in the 
+		first menu above, each sliced up into the 3 requisite parts for your 
+		convenience:</p>
+<p align="left"><b><a href="gelbuttons.zip">gelbuttons.zip</a></b></p>
+<p align="left"><!--webbot bot="HTMLMarkup" startspan --><ul id="gooeymenu1alt" class="gelbuttonmenu" style="text-align:left;margin-top:3em">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/" class="selected">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu1alt', selectitem:0})
+</script>
+
+
+<ul id="gooeymenu1b2" class="gelbuttonmenu" style="text-align:left">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/" class="selected">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu1b2', selectitem:0})
+</script>
+
+<ul id="gooeymenu1c" class="gelbuttonmenu" style="text-align:left">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/" class="selected">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu1c', selectitem:0})
+</script>
+
+<ul id="gooeymenu1d" class="gelbuttonmenu" style="text-align:left">
+<li><a href="http://www.dynamicdrive.com/">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com">Tools</a></li>
+<li><a href="http://www.javascriptkit.com/" class="selected">JavaScript</a></li>
+<li><a href="http://www.cssdrive.com">CSS Gallery</a></li>
+</ul>
+
+<script>
+gooeymenu.setup({id:'gooeymenu1d', selectitem:0})
+</script><!--webbot bot="HTMLMarkup" endspan i-checksum="64823" --></p>
+    
+<div id="cjfooterad" style="border-top:1px dashed gray; padding-top:1em;">
+
+
+<div style="background:lightyellow"><b>Wordpress Users</b>: <a href="http://blog.dynamicdrive.com/add-custom-javascript-css-wordpress/" target="_new">Step by Step instructions to add ANY Dynamic Drive script to an entire Wordpress theme or individual Post</a></div>
+
+<div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- DD RA horizontal -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7051847089736268"
+     data-ad-slot="6319204235"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+
+</div></div>
+</div>
+
+<div id="rightcolumn">
+
+
+			<ul class="categorylinks">
+				<li id="c7"><a href="http://www.dynamicdrive.com/dynamicindex7/" >Calendars</a></li>
+				<li id="c6"><a href="http://www.dynamicdrive.com/dynamicindex6/">Date &amp; Time</a></li>
+				<li id="c3"><a href="http://www.dynamicdrive.com/dynamicindex3/">Document Effects</a></li>
+				<li id="c17"><a href="http://www.dynamicdrive.com/dynamicindex17/">Dynamic Content</a></li>
+				<li id="c16"><a href="http://www.dynamicdrive.com/dynamicindex16/">Form Effects</a></li>
+				<li id="c12"><a href="http://www.dynamicdrive.com/dynamicindex12/">Games</a></li>
+				<li id="c4"><a href="http://www.dynamicdrive.com/dynamicindex4/">Image Effects</a></li>		
+				<li id="c5"><a href="http://www.dynamicdrive.com/dynamicindex5/">Links &amp; Tooltips</a></li>			
+				<li id="c1"><a href="http://www.dynamicdrive.com/dynamicindex1/">Menus &amp; Navigation</a></li>
+				<li id="c13"><a href="http://www.dynamicdrive.com/dynamicindex13/">Mouse and Cursor</a></li>			
+				<li id="c2"><a href="http://www.dynamicdrive.com/dynamicindex2/">Scrollers</a></li>
+				<li id="c10"><a href="http://www.dynamicdrive.com/dynamicindex10/">Text Animations</a></li>
+				<li id="c9"><a href="http://www.dynamicdrive.com/dynamicindex9/">User/System Preference</a></li>
+				<li id="c8"><a href="http://www.dynamicdrive.com/dynamicindex8/">Window and Frames</a></li>
+				<li id="c11"><a href="http://www.dynamicdrive.com/dynamicindex11/">Other</a></li>
+				<li id="c18"><a href="http://www.dynamicdrive.com/dynamicindex18/">XML and RSS</a></li>
+			</ul>
+
+<div class="sideadbsa">
+
+<!-- BuySellAds Zone Code -->
+<div id="bsap_1303277" class="bsarocks bsap_f1d07212cbe850be7e3db47ab3e68732"></div>
+<!-- End BuySellAds Zone Code -->
+</div>
+
+
+	<div id="rightcolumnad">
+
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- DD 160 x 60 -->
+	<ins class="adsbygoogle"
+	     style="display:inline-block;width:160px;height:600px"
+	     data-ad-client="ca-pub-7051847089736268"
+	     data-ad-slot="3924582631"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+
+	</div>
+
+</div>
+
+</div>
+
+<div id="footer" style="position:relative">
+
+<ul>
+<li><a href="http://www.dynamicdrive.com/export.php?type=new">RSS Feeds</a></li>
+<li><a href="http://twitter.com/ddrivegeorge">Twitter</a></li>
+<li><a href="https://www.facebook.com/Dynamic-Drive-135976520082989/timeline/">Facebook</a></li>
+<li><a href="http://www.dynamicdrive.com/faqs.htm">FAQs</a></li>
+<li><a href="http://www.dynamicdrive.com/newsletter.htm">Free Newsletter</a></li>
+<li><a href="http://www.dynamicdrive.com/notice.htm">Usage Terms</a></li>
+<li><a href="http://www.dynamicdrive.com/contact.htm">Contact</a></li>
+</ul>
+
+
+<div id="copyright">Copyright 2016 Dynamic Drive <span style="margin-left:30px; color:white; cursor:pointer" onClick="dd_scrolltotop(); return false">[ Top ]</span></div>
+
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55377-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
