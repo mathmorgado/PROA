@@ -1,0 +1,86 @@
+        +valor
+ideia ----------- > negócio
+        processo
+
+
+Minha plataforma ela oferece o que? Um produto? Um serviço? Um produto E um serviço?   -> backlog
+Qual a relação do meu negócio com o mercado? Com uma empresa (B2B)? Com o consumidor final (B2C)? Com um consumidor que revende (B2C2C)? Com uma empresa que vende para o consumidor (B2B2C)? -> backlog
+Qual é o meu mercado? Alimentício, tecnológico, téxtil?  -> backlog
+
+MATRIZ (É - NÃO É - FAZ - NÃO FAZ)
+
+Ex: Analisando Plataforma sobre Salão de Beleza
+
+          É                        NÃO É
+- Plataforma web         | - Aplicativo
+- Facilitador            | - Editor de texto
+- Seguro                 | - Solucionador de conflitos interpessoais
+- Tecnológico            |
+                         |
+                         |
+---------------------------------------------------
+- Agenda horários        | - E-commerce
+- Envia lembretes        | - 'Jeitinho brasileiro'
+- Contrata profissionais | - Serviços especializados capilar
+                         |
+                         |
+                         |
+         FAZ                       NÃO FAZ
+
+
+
+MODELO DE NEGÓCIO
+Proposta de valor - Qual o valor do meu negócio?
+
+relacionamento com clientes - 
+Segmento de clientes - Qual meu público?
+canais - Como chega no meu cliente? Qual o canal?
+
+atividades principais - Quais as funcionalidades da minha plataforma? (Cadastro, acesso etc)
+recursos principais - Quais recursos são necessários para ter as funcionalidades para que minha proposta de valor apareça...
+Parcerias principais - São os meios de fazer seu negócio alavancar
+
+estrutura de custos - TUDO (Considere como o custo necessário para fazer tudo funcionar | contratação, treinamento, maquinário, crachá, marketing etc)
+fontes de receita - Como ganhar dinheiro? Venda do produto/serviço, assinatura, propagandas/anúncios/parcerias, venda pelo uso, taxa etc...
+
+
+EXEMPLO - MERCADO LIVRE
+Proposta de valor - Acesso a um grande números de produtos em um ambiente confortável | Acesso a um grande número de consumidores
+
+Relacionamento com cliente - SAC Sistemas de Avaliações
+Segmento dos clientes - Consumidores | Pequenos varejistas virtuais
+Canais - Website Mercado Livre | SEO (Tráfego orgânico em mecanismos de busca)
+
+Atividades principais - Auditoria e Ações Anti-fraude | Gestão de Qualidade de Pequenos Varejistas
+Recursos principais - Plataforma Tecnológica | Marca
+Parcerias principais - Diversos
+
+Estrutura de custos - Manutenção da plataforma | Anti-fraude | equipe
+fontes de receita - Tarifa de Anúncio | Vendas | Frete | intermediação do pagamento
+
+Tudo se conecta à proposta de valor - Ambiente seguro
+
+
+----------------------
+Pra quem você constrói a plataforma? Para o humano. Então pra agregar  valor precisa de empatia
+
+
+JORNADA DO USUÁRIO
+
+
+Linguagem do Projeto 
+
+Identidade do negócio - Missão | Visão = escalabilidade | Valores
+
+Ex: Loja de bolo
+Identidade do negócio COM a linguagem - Massa do bolo (missão) | Receita (visão) | Ingredientes (valores)
+
+Ex2: Ajudar jovens de baixa renda de periferia
+Identidade do negócio COM linguagem - Corre (missão) ...
+
+
+VISÃO DO PRODUTO
+
+Para (público alvo), cuja (necessidade), o (nome do negócio), é um/a (categoria ou tipo do produto) que (principal benefício).
+
+Diferentemente de (concorrência) o nosso negócio (diferenciação).  

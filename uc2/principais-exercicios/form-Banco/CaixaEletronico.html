@@ -10,19 +10,25 @@
 			{
 				case 1:
 					ver_saldo();
+					break
 				case 2:
 					ver_extrato();
+					break
 				case 3:
 					fazer_saque();
+					break
 				case 4:
 					fazer_deposito();
+					break
 				case 5:
 					fazer_transferencia();
+					break
 				case 6:
 					sair();
 					break
 				default:
 					erro();
+					break
 			}
 		}
 
@@ -73,7 +79,7 @@
 				validar_senha(ver_saldo) // Passando a função atual como parâmetro, podemos gerar um "laço" até o usuário acertar a senha!
 			}
 
-			alert('Seu saldo atual é: ' + saldo);
+			alert(`Seu saldo atual é: ${saldo}`); // Usei ` ` para comportar a sintaxe de formatação `${variavel}`
 			inicio();
 		}
 
@@ -154,11 +160,11 @@
 		var saldo = 100.5;
 		
 		let nome = prompt("Qual seu nome? ")
-		alert("Olá " + nome + ", é um prazer ter você por aqui!")
+		alert(`Olá ${nome}, é um prazer ter você por aqui!`)
 
 		inicio();
 
-		alert(nome + " foi um prazer ter você por aqui!")
+		alert(`${nome} foi um prazer ter você por aqui!`)
 	</script>
 <title></title></head>
 
