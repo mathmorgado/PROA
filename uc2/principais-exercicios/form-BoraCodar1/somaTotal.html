@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Média aritimética</title>
+    <title>Soma total</title>
 </head>
 <body>
     <script>
         let num;
-        let mediaAritmetica = 0;
+        let acumulador = 0;
 
         for(let c = 1; c <= 10; c++)
         {
             num = parseInt(prompt("Digite um número: "));
-            mediaAritmetica += num;
-
-            document.write(`<br>${c}º - ${num}`);
+            acumulador += num;
         }
-
-        mediaAritmetica /= 10;
-        document.write(`<br>A média aritimética é : ${mediaAritmetica}`);
+        document.write(`<br>A média aritimética é : ${acumulador}`);
     </script>
 </body>
 </html>
