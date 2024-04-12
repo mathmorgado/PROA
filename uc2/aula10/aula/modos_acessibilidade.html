@@ -70,15 +70,15 @@
         <button onclick="modoNormal()">modo normal</button>
         <button onclick="modoEscuro()">modo escuro</button>
         <button onclick="modoDaltonismo()">modo daltônico</button>
-        <button>modo baixa visão</button>
+        <button onclick="modoBaixaVisao()">modo baixa visão</button>
     </div>
 
     <main>
         <img id="image" src="images/fundo.jpg" alt="estrada na floresta com céu lindo">
         
         <aside>
-            <h1>Testando modos de <span>acessibilidade</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sit numquam odit id sunt reprehenderit voluptas atque inventore cupiditate maxime, aut quasi ab quibusdam at tempora eius neque laborum ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit eum doloremque tempore quas quis vitae quibusdam placeat provident hic! Fugit quam nihil dolorum eligendi saepe culpa libero porro possimus!</p>
+            <h1 id="titulo" >Testando modos de <span>acessibilidade</span></h1>
+            <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sit numquam odit id sunt reprehenderit voluptas atque inventore cupiditate maxime, aut quasi ab quibusdam at tempora eius neque laborum ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit eum doloremque tempore quas quis vitae quibusdam placeat provident hic! Fugit quam nihil dolorum eligendi saepe culpa libero porro possimus!</p>
         </aside>
 
         
@@ -91,6 +91,15 @@
             document.getElementById("background").style.backgroundColor = "white"
             document.getElementById("background").style.color = "black"
             document.getElementById("image").src = "images/fundo.jpg"
+
+            document.getElementById("titulo").style.fontSize = "30px"
+            document.getElementById("texto").style.fontSize = "19px"
+        }
+
+        function modoBaixaVisao()
+        {
+            document.getElementById("titulo").style.fontSize = "50px"
+            document.getElementById("texto").style.fontSize = "25px"
         }
 
         function modoEscuro()
