@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior Número</title>
+</head>
+<body>
+    <script>
+        let num;
+        let media = 0;
+
+        for(let c = 1; c <= 4; c++)
+        {
+            num = parseInt(prompt("Digite um número: "));
+
+            if (num > 0 && num <= 10)
+            {
+                media += num;
+            }
+        }
+
+        if (media > 5)
+        {
+            document.write("Você passou no teste");
+        }
+        else
+        {
+            document.write("Tente novamente");
+        }
+        
+        
+    </script>
+</body>
+</html>
