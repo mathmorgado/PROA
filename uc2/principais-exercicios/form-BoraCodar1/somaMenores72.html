@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dos números menor que 72</title>
+</head>
+<body>
+    <script>
+        let num;
+        let acumulador = 0;
+
+        for(let c = 1; c <= 6; c++)
+        {
+            num = parseInt(prompt("Digite um número: "));
+            if (num < 72)
+            {
+                acumulador += num;
+            }
+
+            document.write(`<br>${c}º - ${num}`);
+        }
+        document.write(`<br>A soma dos números menor que 72 é: ${acumulador}`);
+    </script>
+</body>
+</html>
