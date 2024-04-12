@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior Número</title>
+</head>
+<body>
+    <script>
+        let num;
+        let mediaAritmetica = 0;
+
+        for(let c = 1; c <= 10; c++)
+        {
+            num = parseInt(prompt("Digite um número: "));
+            mediaAritmetica += num;
+
+            document.write(`<br>${c}º - ${num}`);
+        }
+
+        mediaAritmetica /= 10;
+        document.write(`<br>A média aritimética é : ${mediaAritmetica}`);
+    </script>
+</body>
+</html>
