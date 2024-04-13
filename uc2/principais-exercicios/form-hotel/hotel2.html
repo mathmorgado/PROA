@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+</head>
+<body>
+    <script>
+        function inicio() 
+        {
+            let opcao = prompt("Início\n1- Valor da Hospedagem\n 2- Sair\nEscolha a opção desejada: ");
+            switch(opcao)
+            {
+                case "1":
+                    valorHospedagem();
+                    break;
+                case "2":
+                    sair();
+                    break;
+                default:
+                    erro();
+                    break;
+            }
+        }
+
+        function erro()
+        {
+            alert("Opção inválida!");
+            inicio()
+        }
+
+        function sair()
+        {
+            alert(`Muito obrigado e até logo, ${nomeUsuario}`);
+        }
+
+        function validarDado(funcaoDestino, {validarSenha=false, valorDado=0, diasHospedagem=1, validarDiasHospedagem=false}) 
+        {
+            if (validarSenha)
+            {
+                let senhaUsuario = prompt("Senha: ");
+
+                if (senhaUsuario != 2678)
+                {
+                    alert("Senha inválida. Tente novamente")
+                    validarDado(funcaoDestino, {validarSenha: true}); // prende o usuário num loop até acerta a senha
+                }
+                else
+                {
+                    alert("Senha Correta");
+                    funcaoDestino(); // encaminha para a função desejada de forma dinâmica
+                }
+            }
+            else
+            {
+                if (valorDado < 0 || diasHospedagem < 0)
+                {
+                    alert("Valor inválido. Tente novamente!");
+                    funcaoDestino(); // Cria um loop até o usuário digitar um dado válido
+                }
+                else if (validarDiasHospedagem)
+                {
+                    if (diasHospedagem > 30)
+                    {
+                        alert("Valor inválido. Tente novamente!");
+                        funcaoDestino();
+                    }
+                    else
+                    {
+                        return // encerra a função e "quebra" o loop
+                    }
+                }
+                else
+                {
+                    return // encerra a função e "quebra" o loop
+                }
+            }
+        }
+
+        function valorHospedagem() 
+        {
+            // Dados importatens como Valor da Diária e Qtde de dias para hospedagem
+            let valorPadraoDiaria = parseFloat(prompt("Qual o valor padrão da diária? "));
+
+            // Validar os dados de valor e dias de hospedagem
+            validarDado(valorHospedagem, { valorDado: valorPadraoDiaria});
+            
+            // Cadastro da família
+            let contador = 1;
+            
+            let inteiras = 0;
+            let meias = 0;
+            let gratuidade = 0;
+
+            // Variavel que armazena o peso do multiplicador no valor total das hospedagens: Ex: 2 inteiras e 1 meia = 2,5.
+            let pesoMultiplicador = 0;
+            
+            while (contador <= 15)
+            {
+                let nomeHospede = prompt("Qual o nome do hóspede? ");
+                if (nomeHospede == "PARE")
+                {
+                    break;
+                }
+
+                let idadeHospede = prompt("Qual a idade do hóspede? ")
+                validarDado(inicio, {valorDado: idadeHospede})
+
+                if (idadeHospede < 6)
+                {
+                    // gratuidade
+                    alert(`${nomeHospede}, cadastrada(o) com sucesso. ${nomeHospede} possui gratuidade`);
+                    gratuidade++;
+                }
+                else if (idadeHospede > 60)
+                {
+                    // meia
+                    alert(`${nomeHospede}, cadastrada(o) com sucesso. ${nomeHospede} paga meia`);
+                    pesoMultiplicador += 0.5;
+                    meias++;
+                }
+                else
+                {
+                    // inteiro
+                    alert(`${nomeHospede}, cadastrada(o) com sucesso.`);
+                    pesoMultiplicador++;
+                    inteiras++;
+                }
+
+                contador++;
+            }
+
+            // calculando e informando o valor da hospedagem
+            let valorTotalHospedagem = valorPadraoDiaria * pesoMultiplicador
+            alert(`${nomeUsuario}, o valor total das hosedagens é: R$${valorTotalHospedagem}\nQuatidade de gratuidade(s): ${gratuidade}\nQuantidade de meia(s): ${meias}`)   
+        }
+
+        let nomeHotel = prompt("Nome do hotel: ");
+        alert(`O nome do hotel é ${nomeHotel}`);
+
+        let nomeUsuario = prompt("Nome do usuário: ");
+        validarDado(inicio, {validarSenha: true});
+
+    </script>
+</body>
+</html>
