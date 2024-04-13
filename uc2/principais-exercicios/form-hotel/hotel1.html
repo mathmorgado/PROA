@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+</head>
+<body>
+    <script>
+        function inicio() 
+        {
+            let opcao = prompt("Início\n1- Valor da Hospedagem\n 2- Sair\nEscolha a opção desejada: ");
+            switch(opcao)
+            {
+                case "1":
+                    valorHospedagem();
+                    break;
+                case "2":
+                    sair();
+                    break;
+                default:
+                    erro();
+                    break;
+            }
+        }
+
+        function erro()
+        {
+            alert("Opção inválida!");
+            inicio()
+        }
+
+        function sair()
+        {
+            alert(`Muito obrigado e até logo, ${nomeUsuario}`);
+        }
+
+        function validarDado(funcaoDestino, {validarSenha=false, valorDado=0, diasHospedagem=0, validarDiasHospedagem=false}) 
+        {
+            if (validarSenha)
+            {
+                let senhaUsuario = prompt("Senha: ");
+
+                if (senhaUsuario != 2678)
+                {
+                    alert("Senha inválida. Tente novamente")
+                    validarDado(funcaoDestino, {validarSenha: true}); // prende o usuário num loop até acerta a senha
+                }
+                else
+                {
+                    alert("Senha Correta");
+                    funcaoDestino(); // encaminha para a função desejada de forma dinâmica
+                }
+            }
+            else
+            {
+                if (valorDado < 0 || diasHospedagem < 0)
+                {
+                    alert("Valor inválido. Tente novamente!");
+                    funcaoDestino(); // Cria um loop até o usuário digitar um dado válido
+                }
+                else if (validarDiasHospedagem)
+                {
+                    if (diasHospedagem > 30)
+                    {
+                        alert("Valor inválido. Tente novamente!");
+                        funcaoDestino();
+                    }
+                    else
+                    {
+                        return // encerra a função e "quebra" o loop
+                    }
+                }
+                else
+                {
+                    return // encerra a função e "quebra" o loop
+                }
+            }
+        }
+
+        function valorHospedagem() 
+        {
+            // Dados importatens como Valor da Diária e Qtde de dias para hospedagem
+            let valorPadraoDiaria = parseFloat(prompt("Qual o valor padrão da diária? "))
+            let qtdeDiasHospedagem = parseInt(prompt("Dias de hospedagem: "))
+
+            // Validar os dados de valor e dias de hospedagem
+            validarDado(valorHospedagem, { valorDado: valorPadraoDiaria, diasHospedagem: qtdeDiasHospedagem, validarDiasHospedagem: true})
+
+            // calculando e informando o valor da hospedagem
+            let valorTotalHospedagem = valorPadraoDiaria * qtdeDiasHospedagem
+            alert(`O valor de ${qtdeDiasHospedagem} dias de hospedagem será: R$${valorTotalHospedagem}`)
+
+            let nomeHospede = prompt("Qual o nome do hóspede? ")
+
+            // Processo de confirmação da hospedagem
+            let confirmarHospedagem = prompt(`${nomeUsuario}, você confirma a hospedagem para ${nomeHospede} por ${qtdeDiasHospedagem} dias? S/N`)
+            if (confirmarHospedagem == "S")
+            {
+                alert( `${nomeUsuario}, reserva efetuada para ${nomeHospede}. O valor total é de R$${valorTotalHospedagem}.`)
+                inicio()
+            }
+            else
+            {
+                alert(`${nomeHospede}, reserva não efetuada!`)
+                inicio()
+            }
+        }
+
+        let nomeHotel = prompt("Nome do hotel: ");
+        alert(`O nome do hotel é ${nomeHotel}`);
+
+        let nomeUsuario = prompt("Nome do usuário: ");
+        validarDado(inicio, {validarSenha: true});
+
+    </script>
+</body>
+</html>
