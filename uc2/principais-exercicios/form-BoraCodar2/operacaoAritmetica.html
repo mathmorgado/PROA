@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operação Aritimética</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt(prompt("Digite um núemro: "))
+        let num2 = parseInt(prompt("Digite outro número: "))
+        let valorConta
+
+        let opcao = parseInt(prompt("Escolha uma das opções abaixo.\n1- Adição\n2- Subtração\n3- Divisão\n4- Multiplicação"))
+
+        switch(opcao)
+        {
+            case 1:
+                valorConta = num1 + num2
+                document.write(`${num1} + ${num2} = ${valorConta}`)
+                break
+            case 2:
+                valorConta = num1 - num2
+                document.write(`${num1} - ${num2} = ${valorConta}`)
+                break
+            case 3:
+                valorConta = num1 / num2
+                document.write(`${num1} / ${num2} = ${valorConta}`)
+                break
+            case 4:
+                valorConta = num1 * num2
+                document.write(`${num1} x ${num2} = ${valorConta}`)
+                break
+        }
+        
+    </script>
+</body>
+</html>
