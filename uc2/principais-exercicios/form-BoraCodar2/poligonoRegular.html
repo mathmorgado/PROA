@@ -8,28 +8,34 @@
 <body>
     <script>
         let QtdeLados = parseInt(prompt("Quantidade de lados do polígono: "))
-        let medidaLados = parseInt(prompt("Medida dos lados em cm: "))
-        let perimetroPoligono = medidaLados*QtdeLados
 
-
-        switch(QtdeLados)
+        if (QtdeLados < 3)
         {
-            case 1:
-                valorConta = num1 + num2
-                document.write(`${num1} + ${num2} = ${valorConta}`)
-                break
-            case 2:
-                valorConta = num1 - num2
-                document.write(`${num1} - ${num2} = ${valorConta}`)
-                break
-            case 3:
-                valorConta = num1 / num2
-                document.write(`${num1} / ${num2} = ${valorConta}`)
-                break
-            case 4:
-                valorConta = num1 * num2
-                document.write(`${num1} x ${num2} = ${valorConta}`)
-                break
+            document.write("Não é um polígono!")
+        }
+        else if (QtdeLados > 5)
+        {
+            document.write("Polígono não reconhecido!")
+        }
+        else
+        {
+            let medidaLados = parseInt(prompt("Medida dos lados em cm: "))
+            let perimetroPoligono = medidaLados*QtdeLados
+            
+            switch(QtdeLados)
+            {
+                case 3:
+                    document.write("Triângulo")
+                    break
+                case 4:
+                    document.write("Quadrado")
+                    break
+                case 5:
+                    document.write("Pentagono")
+                    break
+            }
+
+            document.write("<br>Perímetro: " + perimetroPoligono + "cm")
         }
         
     </script>
