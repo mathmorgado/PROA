@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+        // Parâmetros: Para qual função devo ir em caso de erro/finalização. Se é necessário validar a senha. Caso não seja necessário validar senha, qual dado deve ser validado?
         function validarDado(funcaoDestino, {validarSenha=false, valorDado=0}) 
         {
             if (validarSenha)
@@ -48,46 +49,49 @@
 
         function inicio() 
         {
-            // definindo
+            // definindo os valores do alcool e gasolina no posto Waye Oil e fazendo a validação ao mesmo tempo
             const postoWayneOil = {
                 alcool: validarDado(inicio, {valorDado: parseFloat(prompt("Qual o valor do álcool no posto Wayne Oil? "))}),
                 gasolina: validarDado(inicio, {valorDado: parseFloat(prompt("Qual o valor da gasolina no posto Wayne Oil? "))})
             };
 
+            // definindo os valores do alcool e gasolina no posto Starck Petrol e fazendo a validação ao mesmo tempo
             const postoStarkPetrol = {
                 alcool: validarDado(inicio, {valorDado: parseFloat(prompt("Qual o valor do álcool no posto Stark Petrol? "))}),
                 gasolina: validarDado(inicio, {valorDado: parseFloat(prompt("Qual o valor da gasolina no posto Stark Petrol? "))})
             };
 
-            // Verificar qual combustivel compensa mais no Posto Wayne Oil
+            // Verificação de qual compustível compensa mais em cada posto. (true == alcool, false == gasolina)
             compensaAlcoolPostoWayneOil = verificarAlcoolCompensa(postoWayneOil.alcool, postoWayneOil.gasolina);
             compensaAlcoolPostoStarkPetrol = verificarAlcoolCompensa(postoStarkPetrol.alcool, postoStarkPetrol.gasolina);
 
+            // Declarando a variavel que vai armazenar a mensagem final (Qual é o combustível que mais compensa e de qual posto ele é?)
             let mensagem;
 
-            if (compensaAlcoolPostoWayneOil && compensaAlcoolPostoStarkPetrol)
+            // Série de validações para descobrir qual combustivel de qual posto compensa mais
+            if (compensaAlcoolPostoWayneOil && compensaAlcoolPostoStarkPetrol) // Se o alcool compensa mais em ambos, pegue o mais barato entre eles
             {
-               mensagem = (postoWayneOil.alcool < postoStarkPetrol.alcool)
-                ? `${nomeUsuario}, é mais barato abastecer com álcool no Posto Wayne Oil!`
-                : `${nomeUsuario}, é mais barato abastecer com álcool no Posto Stark Petrol!`;
+               mensagem = (postoWayneOil.alcool < postoStarkPetrol.alcool) // Comparando os preços de álcool em ambos os postos pra ver qual o mais barato (if)
+                ? `${nomeUsuario}, é mais barato abastecer com álcool no Posto Wayne Oil!` // true == alcool do posto wayne é mais barato
+                : `${nomeUsuario}, é mais barato abastecer com álcool no Posto Stark Petrol!`; // false == alcool do posto wayne é mais caro -> alcool do posto Stark é mais barato
             }
-            else if (compensaAlcoolPostoWayneOil) 
+            else if (compensaAlcoolPostoWayneOil) // Caso compense o alcool no Posto Wayne e a gasolina no Stark, verificar se o alcool compensa mais sobre o valor da gasolina (<70%)
             {
-                mensagem = (verificarAlcoolCompensa(postoWayneOil.alcool, postoStarkPetrol.gasolina))
-                ? `${nomeUsuario}, é mais barato abastecer com álcool no Posto Wayne Oil!`
-                : `${nomeUsuario}, é mais barato abastecer com gasolina no Posto Stark Petrol!`;
+                mensagem = (verificarAlcoolCompensa(postoWayneOil.alcool, postoStarkPetrol.gasolina)) // verificando a porcentagem de economia com o Álcool 
+                ? `${nomeUsuario}, é mais barato abastecer com álcool no Posto Wayne Oil!` // true == alcool compensa mais -> alcool do posto Wayne
+                : `${nomeUsuario}, é mais barato abastecer com gasolina no Posto Stark Petrol!`; // false == gasolina compensa mais -> gasolina do posto Stark
             }
-            else if (compensaAlcoolPostoStarkPetrol) 
+            else if (compensaAlcoolPostoStarkPetrol)  // Caso compense o alcool no Posto Stark e a gasolina no Wayne, verificar se o alcool compensa mais sobre o valor da gasolina (<70%)
             {
-                mensagem = (verificarAlcoolCompensa(postoStarkPetrol.alcool, compensaAlcoolPostoWayneOil.gasolina))
-                ? `${nomeUsuario}, é mais barato abastecer com álcool no Posto Stark Petrol!`
-                : `${nomeUsuario}, é mais barato abastecer com gasolina no Posto Wayne Oil!`;
+                mensagem = (verificarAlcoolCompensa(postoStarkPetrol.alcool, compensaAlcoolPostoWayneOil.gasolina)) // verificando a porcentagem de economia com o Álcool
+                ? `${nomeUsuario}, é mais barato abastecer com álcool no Posto Stark Petrol!` // true == alcool compensa mais -> alcool do posto Stark
+                : `${nomeUsuario}, é mais barato abastecer com gasolina no Posto Wayne Oil!`; // false == gasolina compensa mais -> gasolina do posto Wayne
             }
             else
             {
-                mensagem = (postoWayneOil.gasolina < postoStarkPetrol.gasolina)
-                ? `${nomeUsuario}, é mais barato abastecer com gasolina no Posto Wayne Oil!`
-                : `${nomeUsuario}, é mais barato abastecer com gasolina no Posto Stark Petrol!`;
+                mensagem = (postoWayneOil.gasolina < postoStarkPetrol.gasolina) // Comparando os preços de gasolina em ambos os postos pra ver qual o mais barato (if)
+                ? `${nomeUsuario}, é mais barato abastecer com gasolina no Posto Wayne Oil!` // true == gasolina no posto wayne mais barata
+                : `${nomeUsuario}, é mais barato abastecer com gasolina no Posto Stark Petrol!`; // false == gasolina no posto wayne mais cara -> gasolina no posto stark mais barato!
             }
 
             alert(mensagem);
