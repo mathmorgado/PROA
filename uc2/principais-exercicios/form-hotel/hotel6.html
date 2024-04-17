@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+</head>
+<body>
+    <script>
+        function erro()
+        {
+            alert("Opção inválida!");
+            inicio()
+        }
+
+        function validarDado(funcaoDestino, {validarSenha=false, valorDado=0}) 
+        {
+            if (validarSenha)
+            {
+                let senhaUsuario = prompt("Senha: ");
+
+                if (senhaUsuario != 2678)
+                {
+                    alert("Senha inválida. Tente novamente")
+                    validarDado(funcaoDestino, {validarSenha: true}); // prende o usuário num loop até acerta a senha
+                }
+                else
+                {
+                    alert("Senha Correta");
+                    funcaoDestino(); // encaminha para a função desejada de forma dinâmica
+                }
+            }
+            else
+            {
+                if (valorDado < 0)
+                {
+                    alert("Valor inválido. Tente novamente!");
+                    funcaoDestino(); // Cria um loop até o usuário digitar um dado válido
+                }
+                else
+                {
+                    return // encerra a função e "quebra" o loop
+                }
+            }
+        }
+
+        function inicio() 
+        {
+            let qtdeConvidados = parseInt(prompt("Quantos convidados? "));
+            validarDado(inicio, {valorDado: qtdeConvidados})
+            if (qtdeConvidados > 350)
+            {
+                alert("Quantidade máxima excedida")
+                inicio()
+            }
+
+            if (qtdeConvidados <= 220)
+            {
+                if (qtdeConvidados > 150)
+                {
+                    let qtdeCadeiras = qtdeConvidados - 150
+                    alert(`Use o auditório Laranja (inclua mais ${qtdeCadeiras} cadeiras)`)
+                }
+                else
+                {
+                    alert("Use o auditório Laranja")
+                }
+            }
+            else
+            {
+                alert("Use o auditório Colorado")
+            }
+
+            let confirmarReserva = prompt("Gostaria de efetuar a reserva? S/N")
+            if (confirmarReserva == "S")
+            {
+                alert(`${nomeUsuario}, reserva efetuada com sucesso.`)
+                inicio()
+            }
+            else
+            {
+                alert("Reserva não efetuada.")
+                inicio()
+            }
+        }
+
+
+        let nomeHotel = prompt("Nome do hotel: ");
+        alert(`O nome do hotel é ${nomeHotel}`);
+
+        let nomeUsuario = prompt("Nome do usuário: ");
+        validarDado(inicio, {validarSenha: true});
+
+    </script>
+</body>
+</html>
