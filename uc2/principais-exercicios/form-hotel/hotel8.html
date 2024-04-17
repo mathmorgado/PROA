@@ -7,12 +7,6 @@
 </head>
 <body>
     <script>
-        function erro()
-        {
-            alert("Opção inválida!");
-            inicio()
-        }
-
         function validarDado(funcaoDestino, {validarSenha=false, valorDado=0}) 
         {
             if (validarSenha)
@@ -39,37 +33,65 @@
                 }
                 else
                 {
-                    return // encerra a função e "quebra" o loop
+                    return valorDado; // Retornando o valor do dado verificado
                 }
             }
         }
 
-        function verificarCombustivelMaisBarato(valorAlcool, valorGasolina)
+        function verificarAlcoolCompensa(valorAlcool, valorGasolina)
         {
-            // alcool 30% mais barato compensa mais!
+            // Calculando a porcentagem de economia com o Álcool 
             let porcentagemAlcool = valorAlcool / (valorGasolina / 100)
-            if (porcentagemAlcool <= 70)
-            {
-                // compensa levar alcool
-            }
-            else
-            {
-                // compensa levar Gasolina
-            }
+            return porcentagemAlcool <= 70 // até 70% compensa mais usar álcool)
+
         }
 
         function inicio() 
         {
-            let valorAlcoolWayneOil = parseFloat(prompt("Qual o valor do álcool no posto Wayne Oil? "))
-            let valorGasolinalWayneOil = parseFloat(prompt("Qual o valor do gasolina no posto Wayne Oil? "))
-            verificarCombustivelMaisBarato(valorAlcoolWayneOil, valorGasolinalWayneOil)
+            // definindo
+            const postoWayneOil = {
+                alcool: validarDado(inicio, {valorDado: parseFloat(prompt("Qual o valor do álcool no posto Wayne Oil? "))}),
+                gasolina: validarDado(inicio, {valorDado: parseFloat(prompt("Qual o valor da gasolina no posto Wayne Oil? "))})
+            };
 
-            let valorAlcoolStarkPetrol = parseFloat(prompt("Qual o valor do álcool no posto Stark Petrol? "))
-            let valorGasolinalStarkPetrol = parseFloat(prompt("Qual o valor do gasolina no posto Stark Petrol? "))
+            const postoStarkPetrol = {
+                alcool: validarDado(inicio, {valorDado: parseFloat(prompt("Qual o valor do álcool no posto Stark Petrol? "))}),
+                gasolina: validarDado(inicio, {valorDado: parseFloat(prompt("Qual o valor da gasolina no posto Stark Petrol? "))})
+            };
 
+            // Verificar qual combustivel compensa mais no Posto Wayne Oil
+            compensaAlcoolPostoWayneOil = verificarAlcoolCompensa(postoWayneOil.alcool, postoWayneOil.gasolina);
+            compensaAlcoolPostoStarkPetrol = verificarAlcoolCompensa(postoStarkPetrol.alcool, postoStarkPetrol.gasolina);
 
+            let mensagem;
+
+            if (compensaAlcoolPostoWayneOil && compensaAlcoolPostoStarkPetrol)
+            {
+               mensagem = (postoWayneOil.alcool < postoStarkPetrol.alcool)
+                ? `${nomeUsuario}, é mais barato abastecer com álcool no Posto Wayne Oil!`
+                : `${nomeUsuario}, é mais barato abastecer com álcool no Posto Stark Petrol!`;
+            }
+            else if (compensaAlcoolPostoWayneOil) 
+            {
+                mensagem = (verificarAlcoolCompensa(postoWayneOil.alcool, postoStarkPetrol.gasolina))
+                ? `${nomeUsuario}, é mais barato abastecer com álcool no Posto Wayne Oil!`
+                : `${nomeUsuario}, é mais barato abastecer com gasolina no Posto Stark Petrol!`;
+            }
+            else if (compensaAlcoolPostoStarkPetrol) 
+            {
+                mensagem = (verificarAlcoolCompensa(postoStarkPetrol.alcool, compensaAlcoolPostoWayneOil.gasolina))
+                ? `${nomeUsuario}, é mais barato abastecer com álcool no Posto Stark Petrol!`
+                : `${nomeUsuario}, é mais barato abastecer com gasolina no Posto Wayne Oil!`;
+            }
+            else
+            {
+                mensagem = (postoWayneOil.gasolina < postoStarkPetrol.gasolina)
+                ? `${nomeUsuario}, é mais barato abastecer com gasolina no Posto Wayne Oil!`
+                : `${nomeUsuario}, é mais barato abastecer com gasolina no Posto Stark Petrol!`;
+            }
+
+            alert(mensagem);
         }
-
 
         let nomeHotel = prompt("Nome do hotel: ");
         alert(`O nome do hotel é ${nomeHotel}`);
