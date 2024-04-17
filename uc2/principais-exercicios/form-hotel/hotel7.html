@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+</head>
+<body>
+    <script>
+        function erro()
+        {
+            alert("Opção inválida!");
+            inicio()
+        }
+
+        function validarDado(funcaoDestino, {validarSenha=false, valorDado=0}) 
+        {
+            if (validarSenha)
+            {
+                let senhaUsuario = prompt("Senha: ");
+
+                if (senhaUsuario != 2678)
+                {
+                    alert("Senha inválida. Tente novamente")
+                    validarDado(funcaoDestino, {validarSenha: true}); // prende o usuário num loop até acerta a senha
+                }
+                else
+                {
+                    alert("Senha Correta");
+                    funcaoDestino(); // encaminha para a função desejada de forma dinâmica
+                }
+            }
+            else
+            {
+                if (valorDado < 0)
+                {
+                    alert("Valor inválido. Tente novamente!");
+                    funcaoDestino(); // Cria um loop até o usuário digitar um dado válido
+                }
+                else
+                {
+                    return // encerra a função e "quebra" o loop
+                }
+            }
+        }
+
+        function inicio() 
+        {
+            const diasSemana = ["segunda", "terça", "quarta", "quinta", "sexta", "sabado", "domingo"]
+
+            let diaEvento = prompt("Que dia será o evento? ");
+
+            if (!diasSemana.includes(diaEvento))
+            {
+                alert("Dia inválido!")
+                inicio()
+            }
+            else if (diaEvento == "sabado" || diaEvento == "domingo")
+            {
+                let horarioEvento = parseInt(prompt("Horário do evento: "));
+                
+                if (horarioEvento < 7 || horarioEvento > 15)
+                {
+                    alert("Restaurante indisponível")
+                    inicio()
+                }
+                
+                let nomeEmpresa = prompt("Qual o nome da empresa? ")
+
+                alert(`Restaurante reservado para ${nomeEmpresa}. ${diaEvento} às ${horarioEvento}hs`)
+            }
+            else
+            {
+                let horarioEvento = parseInt(prompt("Horário do evento: "));
+                
+                if (horarioEvento < 7 || horarioEvento > 23)
+                {
+                    alert("Restaurante indisponível")
+                    inicio()
+                }
+                
+                let nomeEmpresa = prompt("Qual o nome da empresa? ")
+
+                alert(`Restaurante reservado para ${nomeEmpresa}. ${diaEvento} às ${horarioEvento}hs`)
+            }
+        }
+
+
+        let nomeHotel = prompt("Nome do hotel: ");
+        alert(`O nome do hotel é ${nomeHotel}`);
+
+        let nomeUsuario = prompt("Nome do usuário: ");
+        validarDado(inicio, {validarSenha: true});
+    </script>
+</body>
+</html>
