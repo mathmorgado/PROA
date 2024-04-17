@@ -9,7 +9,7 @@
     <script>
         function inicio() 
         {
-            let opcao = prompt("Início\n1- Valor da Hospedagem\n 2- Sair\nEscolha a opção desejada: ");
+            let opcao = prompt("Início\n1- Cadastrar\n 2- Pesquisar\n3- Sair\nEscolha a opção desejada: ");
             switch(opcao)
             {
                 case "1":
@@ -83,12 +83,34 @@
 
         function cadastroHospede() 
         {
+            if (hospedesCadastrados.length >= 15) // verifica a largura/tamanho do array.
+            {
+                alert("Máximo de cadastros atingido")
+                inicio()
+            }
+            else
+            {
+                let nomeNovoHospede = prompt("Nome: ")
+                hospedesCadastrados.push(nomeNovoHospede) // adiciona um elemento no final do array
+                alert(`Hospede ${nomeNovoHospede} foi cadastrado(a) com sucesso!`)
+                inicio()
+            }
             
         }
 
         function pesquisaHospede() 
         {
-
+            let hospede = prompt("Nome: ")
+            if (hospedesCadastrados.includes(hospede)) // Verifica se tem um elemento específico dentro do array
+            {
+                alert(`Hospede ${hospede} foi encontrado(a)!`)
+                inicio()
+            }
+            else
+            {
+                alert(`${hospede} não foi encontrado(a).`)
+                inicio()
+            }
         }
 
         let hospedesCadastrados = [];
