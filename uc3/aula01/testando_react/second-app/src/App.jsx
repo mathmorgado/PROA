@@ -1,13 +1,13 @@
 import './App.css'
-import paisagem from './assets/paisagem.jpg'
+import Header from './assets/components/header/header'
+import Hero from './assets/components/hero/hero'
 
 function App() {
-  const nome = "Matheus"
 
   return (
     <>
-      <h2> Olá, meu nome é: {nome}! </h2>
-      <img src={paisagem} alt="Uma foto de uma paisagem" />
+      <Header />
+      <Hero />
     </>
   )
 }

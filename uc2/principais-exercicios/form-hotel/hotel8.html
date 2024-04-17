@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+</head>
+<body>
+    <script>
+        function erro()
+        {
+            alert("Opção inválida!");
+            inicio()
+        }
+
+        function validarDado(funcaoDestino, {validarSenha=false, valorDado=0}) 
+        {
+            if (validarSenha)
+            {
+                let senhaUsuario = prompt("Senha: ");
+
+                if (senhaUsuario != 2678)
+                {
+                    alert("Senha inválida. Tente novamente")
+                    validarDado(funcaoDestino, {validarSenha: true}); // prende o usuário num loop até acerta a senha
+                }
+                else
+                {
+                    alert("Senha Correta");
+                    funcaoDestino(); // encaminha para a função desejada de forma dinâmica
+                }
+            }
+            else
+            {
+                if (valorDado < 0)
+                {
+                    alert("Valor inválido. Tente novamente!");
+                    funcaoDestino(); // Cria um loop até o usuário digitar um dado válido
+                }
+                else
+                {
+                    return // encerra a função e "quebra" o loop
+                }
+            }
+        }
+
+        function verificarCombustivelMaisBarato(valorAlcool, valorGasolina)
+        {
+            // alcool 30% mais barato compensa mais!
+            let porcentagemAlcool = valorAlcool / (valorGasolina / 100)
+            if (porcentagemAlcool <= 70)
+            {
+                // compensa levar alcool
+            }
+            else
+            {
+                // compensa levar Gasolina
+            }
+        }
+
+        function inicio() 
+        {
+            let valorAlcoolWayneOil = parseFloat(prompt("Qual o valor do álcool no posto Wayne Oil? "))
+            let valorGasolinalWayneOil = parseFloat(prompt("Qual o valor do gasolina no posto Wayne Oil? "))
+            verificarCombustivelMaisBarato(valorAlcoolWayneOil, valorGasolinalWayneOil)
+
+            let valorAlcoolStarkPetrol = parseFloat(prompt("Qual o valor do álcool no posto Stark Petrol? "))
+            let valorGasolinalStarkPetrol = parseFloat(prompt("Qual o valor do gasolina no posto Stark Petrol? "))
+
+
+        }
+
+
+        let nomeHotel = prompt("Nome do hotel: ");
+        alert(`O nome do hotel é ${nomeHotel}`);
+
+        let nomeUsuario = prompt("Nome do usuário: ");
+        validarDado(inicio, {validarSenha: true});
+    </script>
+</body>
+</html>
