@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+</head>
+<body>
+    <script>
+        // Parâmetros: Para qual função devo ir em caso de erro/finalização. Se é necessário validar a senha. Caso não seja necessário validar senha, qual dado deve ser validado?
+        function validarDado(funcaoDestino, {validarSenha=false, valorDado=0}) 
+        {
+            if (validarSenha)
+            {
+                let senhaUsuario = prompt("Senha: ");
+
+                if (senhaUsuario != 2678)
+                {
+                    alert("Senha inválida. Tente novamente")
+                    validarDado(funcaoDestino, {validarSenha: true}); // prende o usuário num loop até acerta a senha
+                }
+                else
+                {
+                    alert("Senha Correta");
+                    funcaoDestino(); // encaminha para a função desejada de forma dinâmica
+                }
+            }
+            else
+            {
+                if (valorDado < 0)
+                {
+                    alert("Valor inválido. Tente novamente!");
+                    funcaoDestino(); // Cria um loop até o usuário digitar um dado válido
+                }
+                else
+                {
+                    return valorDado; // Retornando o valor do dado verificado
+                }
+            }
+        }
+
+
+        function inicio() 
+        {
+            let empresas = [];
+            let qtdeEmpresas = 0;
+            let continuarLaco;            
+            do
+            {
+                // array que armazena objeto" (estruturas key-value) -> [{key: value}, {key: value} ...]
+                empresas.push({
+                    nome: prompt("Qual o nome da empresa? "),
+                    valor: parseFloat(prompt("Qual o valor por aparelho? ")),
+                    quantidade: parseInt(prompt("Qual a quantidade de aparelhos? ")),
+                    desconto: parseFloat(prompt("Qual a porcentagem de desconto? ")),
+                    QtdeMinParaDesconto: parseInt(prompt("Qual o número mínimo de aparelhos para conseguir o desconto? ")),
+                    valorFinal: undefined
+                });
+                
+                let valorTotal = empresas[qtdeEmpresas].valor * empresas[qtdeEmpresas].quantidade; // valor de cada aparelho * quantidade de aparelhos
+                let valorDesconto = valorTotal * (empresas[qtdeEmpresas].desconto / 100); // Ex: Desconto = 12 -> (12 / 100) = 0.12 * valorTotal -> 12% do valorTotal 
+
+                // adicionando o valor final com/sem desconta da empresa atual
+                empresas[qtdeEmpresas].valorFinal = (empresas[qtdeEmpresas].quantidade >= empresas[qtdeEmpresas].QtdeMinParaDesconto) // verificando se vai ter desconto (qtde comprada é o suficiente para ter o desconto?)
+                    ? valorTotal - valorDesconto // true == adiciona o desconto
+                    : valorTotal; // false == sem desconto
+
+                alert(`O serviço do(a) ${empresas[qtdeEmpresas].nome} custará R$${empresas[qtdeEmpresas].valorFinal}!`);
+                
+                qtdeEmpresas++;
+                continuarLaco = prompt(`Deseja informar novos dados, ${nomeUsuario}? (S/N)`);
+            } 
+            while(continuarLaco != "N");
+
+            let empresaMaisBarata;
+            let contador;
+
+            for(contador = 0; contador < empresas.length; contador++)
+            {
+                if (contador == 0)
+                {
+                    empresaMaisBarata = 0 // index da empresa -> empresas = [0 = {...}, 1 = {...}, 2...]
+                    continue
+                }
+                
+                // Comparando o 'valorFinal' da empresa atual com a empresa com o serviço mais barato até o momento!
+                if (empresas[contador].valorFinal < empresas[empresaMaisBarata].valorFinal)
+                {
+                    empresaMaisBarata = contador;
+                }
+            }
+
+            alert(`O orçamento de menor valor é da empresa ${empresas[empresaMaisBarata].nome} por R$${empresas[empresaMaisBarata].valorFinal}`)
+        }
+
+        let nomeHotel = prompt("Nome do hotel: ");
+        alert(`O nome do hotel é ${nomeHotel}`);
+
+        let nomeUsuario = prompt("Nome do usuário: ");
+        validarDado(inicio, {validarSenha: true});
+    </script>
+</body>
+</html>
