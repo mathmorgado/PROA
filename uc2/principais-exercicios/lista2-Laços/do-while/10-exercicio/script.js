@@ -3,7 +3,7 @@ let fib2 = 1;
 let contador = 0;
 let intermediador;
 
-while(contador < 20)
+do
 {
     document.write(`${fib1}, `);
 
@@ -13,3 +13,4 @@ while(contador < 20)
 
     contador++;
 }
+while(contador < 20)
