@@ -2,12 +2,12 @@
 
 let num = 0
 
-while (num <= 50)
+do
 {
     if (num % 2 == 0)
     {
         document.write("<br>" + num)
     }
     num++
-
 }
+while (num <= 50)
