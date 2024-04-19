@@ -1,14 +1,13 @@
 /* Faça um programa que leia 5 números inteiros usando o loop "while" e exiba a média aritmética dos valores lidos. */
 
 let num
-let contador = 0
+
 let media = 0
 
-while (contador < 5)
+for (let contador = 0; contador < 5; contador++)
 {
     num = parseInt(prompt("Numero: "))
     media += num
-    contador++
 }
 
 media = parseFloat(media / 5)
