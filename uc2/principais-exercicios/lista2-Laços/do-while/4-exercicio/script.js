@@ -4,12 +4,13 @@ let num
 let contador = 0
 let media = 0
 
-while (contador < 5)
+do
 {
     num = parseInt(prompt("Numero: "))
     media += num
     contador++
 }
+while (contador < 5)
 
 media = parseFloat(media / 5)
 
