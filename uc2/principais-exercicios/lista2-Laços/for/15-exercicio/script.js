@@ -4,7 +4,7 @@ let media = 0;
 let contador = 0;
 let continuarLaco = true;
 
-while(continuarLaco)
+for (contador = 0; continuarLaco; contador++)
 {
     nome = prompt("Qual seu nome: ");
     if (nome == "fim")
@@ -13,8 +13,6 @@ while(continuarLaco)
     }
 
     idade = parseInt(prompt("Qual sua idade: "));
-
-    contador++
     media += idade;
 }
 
