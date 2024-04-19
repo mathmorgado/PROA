@@ -1,8 +1,6 @@
 let numero = prompt("Digite um número inteiro");
-let contador = 0;
 
-while(contador < numero.length)
+for (let contador = 0; contador < numero.length; contador++)
 {
     document.write(`${numero[contador]}  `);
-    contador++;
 };
