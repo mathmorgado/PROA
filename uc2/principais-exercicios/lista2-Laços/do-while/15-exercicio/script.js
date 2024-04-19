@@ -4,7 +4,7 @@ let media = 0;
 let contador = 0;
 let continuarLaco = true;
 
-while(continuarLaco)
+do
 {
     nome = prompt("Qual seu nome: ");
     if (nome == "fim")
@@ -17,6 +17,7 @@ while(continuarLaco)
     contador++
     media += idade;
 }
+while(continuarLaco)
 
 media /= contador;
 alert(`A média das idades é ${media}`);
