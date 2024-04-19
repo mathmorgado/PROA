@@ -4,7 +4,8 @@ let num = parseInt(prompt("Digite um número: "))
 let contador = parseInt(num / 2)
 
 document.write("Divisores do número: " + num + "<br>")
-while (contador > 1)
+
+do
 {
     if (num % contador == 0)
     {
@@ -12,4 +13,4 @@ while (contador > 1)
     }
     contador -= 1
 }
-
+while (contador > 1)
