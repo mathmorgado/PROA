@@ -1,6 +1,4 @@
-let contador = 1;
-while(contador < 50)
+for (let contador = 1; contador < 50; contador += 2)
 {
     document.write(`${contador}, `)
-    contador += 2;
 }
