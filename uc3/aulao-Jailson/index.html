@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Inserir um ícone para a página-->
+
+    <!-- Links Tipografia Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Tela Principal - Login</title>
+</head>
+<body>
+
+    <main id="main">
+        <div class="container">
+            <div id="square">
+                <div class="front">
+                    <h1 class="title">Login</h1>
+                    <form action="#" method="post">
+                        <input type="email" required placeholder="Email" name="email" id="email" />
+                        <input type="password" required placeholder="Senha" name="password" id="password" />
+                        <button type="submit">Entrar</button>
+                    </form>
+                </div>
+                
+                <div class="right">
+                    <h1 class="title">Criar uma nova conta</h1>
+                    <form action="#" method="post">
+                        <input type="email" required placeholder="Email" name="email" id="email" />
+                        <input type="text" required placeholder="Nome completo" name="fullName" id="fullName" />
+                        <input type="password" required placeholder="Senha" name="password" id="password" />
+                        <button type="submit">Criar</button>
+                    </form>
+                </div>
+
+                <div class="left">
+                    <h1 class="title">Recuperar Senha</h1>
+                    <form action="#" method="post">
+                        <input type="email" required placeholder="Email" name="email" id="email" />
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="action">
+                <button type="button" id="leftSide">Esqueci a senha</button>
+                <button type="button" id="frontSide">Login</button>
+                <button type="button" id="rightSide">Cadastre-se</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

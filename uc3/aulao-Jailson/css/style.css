@@ -1,0 +1,71 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    color: aliceblue;
+
+    overflow-x: hidden;
+    
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url("https://raw.githubusercontent.com/DwinaTech/public-images/main/background/Nature-Background.jpeg");
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+
+    border-radius: 5px 100px;
+}
+
+#square {
+    display: flex;
+    justify-content: center;
+   
+    min-width: 300px;
+    min-height: 300px;
+    margin-bottom: 100px;
+
+    box-shadow: 3px 3px 5px #012a4a;
+
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-in;
+}
+
+.front,
+.right,
+.left {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+
+    border-radius: 5px;
+}
