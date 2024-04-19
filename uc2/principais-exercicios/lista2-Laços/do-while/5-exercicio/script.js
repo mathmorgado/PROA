@@ -3,8 +3,9 @@
 let numeroDaTabuada = parseInt(prompt("Digite o número da tabuada que deseja ver: "))
 let contador = 1
 
-while (contador <= 10)
+do
 {
     document.write("<br>" + numeroDaTabuada + " x " + contador + " = " + (numeroDaTabuada*contador))
     contador++
 }
+while (contador <= 10)
