@@ -2,7 +2,9 @@
 
 let num = 1
 
-while (num <= 10)
+do 
 {
-    document.write("br" + num)
+    document.write("<br>" + num)
+    num++
 }
+while (num <= 10)
