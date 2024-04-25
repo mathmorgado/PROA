@@ -1,4 +1,5 @@
 import styles from './header.module.css'
+import { Link } from 'react-router-dom';
 import Logo from '../images/logo.png'
 import Lupa from '../images/lupa.png'
 
@@ -12,11 +13,11 @@ export default function Header() {
 
             <nav className={styles.navbar}>
                 <ul className={styles.navbar_content}>
-                    <li className={styles.navbar_item}>Home</li>
-                    <li className={styles.navbar_item}>Escócia</li>
-                    <li className={styles.navbar_item}>Muralhas da China</li>
-                    <li className={styles.navbar_item}>Grand Canyon</li>
-                    <li className={styles.navbar_item}>Aruba</li>
+                    <Link className={styles.navbar_item} to="/" >Home</Link>
+                    <Link className={styles.navbar_item} to="/Aruba" >Aruba</Link>
+                    <Link className={styles.navbar_item} to="/Escocia" >Escócia</Link>
+                    <Link className={styles.navbar_item} to="/GrandCanyon" >Grand Canyon</Link>
+                    <Link className={styles.navbar_item} to="/China" >Muralhas da China</Link>
                 </ul>
             </nav>
 
