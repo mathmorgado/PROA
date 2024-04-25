@@ -3,7 +3,11 @@ import Section from '../assets/components/Section';
 function Home() {
     return (
         <>
-            <Section />
+            <Section 
+            classSection="section_home"
+            titulo="Preparado para viagens incríveis?"
+            imagem="imagem"
+            />
         </>
     );
   }

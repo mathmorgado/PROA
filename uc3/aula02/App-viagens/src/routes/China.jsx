@@ -3,7 +3,11 @@ import Section from '../assets/components/Section';
 function China() {
     return (
         <>
-            <Section />
+            <Section 
+            classSection="section_viagem China"
+            titulo="Viagens para China!"
+            imagem="semImagem"
+            />
         </>
     );
   }

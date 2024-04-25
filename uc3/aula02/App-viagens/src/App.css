@@ -1,0 +1,100 @@
+body {
+    
+}
+
+/* Estilização Geral */
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+    height: 70vh;
+}
+
+/*  ESTILIZANDO HOME  */
+.section_home {
+    width: 90vw;
+    margin: auto
+}
+
+/*estilizando main HOME */
+.section_home .conteudo {
+    width: 55%;
+}
+
+.conteudo h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.conteudo p {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+
+/* estilizando imagem HOME */
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40%;
+    height: 100%;
+}
+
+.imagem img{
+    width: auto;
+    height: 60%;
+}
+
+.semImagem {
+    display: none;
+}
+
+
+/* ESTILIZAÇÃO DAS PÁGINAS DE VIAGEM PADRÃO */
+.section_viagem {
+    color: white;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section_viagem .conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(60%);
+}
+
+.section_viagem .conteudo p {
+    width: 60%;
+    text-align: center;
+}
+
+/* ESTILIZANDO ESCÓSIA */
+.Escocia {
+    background-image: url("./assets/images/Escocia.jpg");
+}
+
+/* ESTILIZANDO MURALHA DA CHINA */
+.China {
+    background-image: url("./assets/images/MuralhasChina.jpeg");
+}
+
+/* ESTILIZANDO GRAND CANYON */
+.GrandCanyon {
+    background-image: url("./assets/images/GrandCanyon.jpeg");
+}
+
+/* ESTILIZANDO ARUBA */
+.Aruba {
+    background-image: url("./assets/images/Aruba.jpg");
+}

@@ -3,7 +3,11 @@ import Section from '../assets/components/Section';
 function Aruba() {
     return (
         <>
-            <Section />
+            <Section 
+            classSection="section_viagem Aruba"
+            titulo="Viagens para Aruba!"
+            imagem="semImagem"
+            />
         </>
     );
   }

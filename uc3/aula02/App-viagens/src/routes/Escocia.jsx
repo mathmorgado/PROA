@@ -3,7 +3,11 @@ import Section from '../assets/components/Section';
 function Escocia() {
     return (
         <>
-            <Section />
+            <Section 
+            classSection="section_viagem Escocia"
+            titulo="Viagens para Escócia!"
+            imagem="semImagem"
+            />
         </>
     );
   }
