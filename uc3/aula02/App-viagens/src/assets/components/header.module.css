@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15%;
+
+    width: 100vw;
+    height: 80px;
+    padding: 0 2%;
+
+    color: white;
+    background-color: #292929;
+}
+
+/*ESTILIZAÇÃO logo*/
+.container_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    width: 20%;
+}
+
+.container_logo  img{
+    width: 25%;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* ESTILIZAÇÃO DA ÁREA DE NAVEGAÇÃO (links) */
+.navbar {
+    width: 32%;
+}
+
+.navbar_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+    list-style: none;
+}
+
+.navbar_item {
+    text-decoration: none;
+
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    
+    color: white;
+
+    cursor: pointer;
+    transition: all 0.33s;
+}
+
+.navbar_item:hover {
+    background-color: #c7c7c742;
+}
+
+/* Estilização da barra de pesquisa */
+.Conteiner_BarraDePesquisa {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+
+.barra_pesquisa {
+    width: 90%;
+    padding: 5px 10px;
+
+    border: none;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.Conteiner_BarraDePesquisa img {
+    width: 12%;
+    padding: 10px;
+
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(245, 237, 237);
+}
