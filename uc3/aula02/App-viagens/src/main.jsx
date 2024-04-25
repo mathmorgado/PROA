@@ -1,7 +1,7 @@
+import './index.css'
 import React from 'react'
 import App from './App.jsx'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 
 // 1- Configurando o Router
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
