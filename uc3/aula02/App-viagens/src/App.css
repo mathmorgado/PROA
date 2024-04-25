@@ -1,4 +1,8 @@
-/* Estilização Geral */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilização Geral de todos os componentes Sections */
 section {
     display: flex;
     flex-direction: row;
@@ -21,13 +25,13 @@ section {
 }
 
 .conteudo h1 {
-    font-size: 64px;
+    font-size: 60px;
     font-weight: 700;
 }
 
 .conteudo p {
     margin-top: 30px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 

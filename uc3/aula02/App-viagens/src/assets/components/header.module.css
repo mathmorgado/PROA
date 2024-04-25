@@ -26,7 +26,7 @@
     align-items: center;
     gap: 20px;
 
-    width: 20%;
+    width: 15%;
 }
 
 .container_logo  img{
@@ -37,7 +37,7 @@
 
 /* ESTILIZAÇÃO DA ÁREA DE NAVEGAÇÃO (links) */
 .navbar {
-    width: 32%;
+    width: 40%;
 }
 
 .navbar_content {
