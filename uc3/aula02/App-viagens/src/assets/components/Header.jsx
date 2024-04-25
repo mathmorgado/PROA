@@ -22,7 +22,7 @@ export default function Header() {
             </nav>
 
             <div className={styles.Conteiner_BarraDePesquisa}>
-                <input type="text" className={styles.barra_pesquisa} />
+                <input type="text" className={styles.barra_pesquisa} placeholder="Pesquisar viagens" />
                 <img src={ Lupa } alt="Lupa de pesquisa" />
             </div>
         </header>
