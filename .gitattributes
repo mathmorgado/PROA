@@ -1,2 +1,14 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# files with .html extension to be detected as HTML
+*.html linguist-language=HTML
+
+# files with .css extension to be detected as CSS
+*.css linguist-language=CSS
+
+# files with .html extension to be detected as HTML
+*.js linguist-language=JavaScript
+
+# files with .css extension to be detected as CSS
+*.jsx linguist-language=React
