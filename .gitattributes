@@ -7,8 +7,5 @@
 # files with .css extension to be detected as CSS
 *.css linguist-language=CSS
 
-# files with .html extension to be detected as HTML
+# files with .html extension to be detected as JavaScript
 *.js linguist-language=JavaScript
-
-# files with .css extension to be detected as CSS
-*.jsx linguist-language=React
