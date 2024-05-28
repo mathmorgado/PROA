@@ -1,0 +1,53 @@
+Classe Monitor {
+	Marca: caracter
+	Modelo: caracter
+	Cor: caracter
+	Saidas: caracter
+	Resolucao: caracter
+	Polegadas: real
+	TaxaAtualizacao: real
+	Ligado: logico
+
+	ligar()
+	desligar()
+}
+
+Classe Garrafa {
+	Fabricante: Caracter
+	Formato: caracter
+	Cor: caractere
+	Fluido: caracter
+	Volume: real
+	Preenchimento: real
+	
+	Tampado: logico
+
+	destampar()
+	tampar()
+	encher()
+	esvaziar()
+		
+}
+
+Classe Festa {
+	Tipo: caracter
+	Data: inteiro
+	Hora: Real
+	Local: caracter
+	QtdPessoas: inteiro
+	Duracao: real
+
+	iniciar()
+	Encerrar()	
+}
+
+Classe pensamento {
+	tipo: caracter
+	complexidade: caracter
+	raciocinio: caracter
+	duracao: real
+
+	parar()
+	pensar()
+}
+
