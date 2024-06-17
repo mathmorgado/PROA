@@ -1,0 +1,9 @@
+Análise para ver se vale a pena o VT -para ter o vt é descontando até 6% do salário (depende da empresa, as vzs nem desconta), as vzs o valor descontado é maior do que o valor que recebe de VT
+
+Sal 4.829,00 -> 6% = 289
+VT 1 onibus por dia por 4,40 -> 8,80x23 = 202
+
+Pegando um ônibus por 4,40 o dia de trabalho, ida e volta são 8,80, no final do mês com 23 dias trabalhados vai receber 202 de VT. Entretanto o valor descontando do salário
+é de 289! Ou seja, é mais vantajoso não receber o VT.
+
+VR e VA é a mesma coisa, mas o desconto é até 10%. A empresa não é obrigada a dar VR nem VT, só se a empresa não tiver nenhum espaço ou suporte para alimentação ai ela é obrigada. (Geladeira, microondas, 
