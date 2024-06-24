@@ -1,9 +1,9 @@
 CREATE DATABASE DB_CDS;
 USE DB_CDS;
-DROP DATABASE bd_consultoriomedico;
+DROP DATABASE db_cds;
 
 CREATE TABLE tb_Artista(
-	Cod_Art INT NOT NULL,
+	Cod_Art INT NOT NULL AUTO_INCREMENT,
     Nome_Art VARCHAR(100) NOT NULL UNIQUE,
     PRIMARY KEY(Cod_Art)
     );
@@ -11,7 +11,7 @@ CREATE TABLE tb_Artista(
 DESCRIBE tb_Artista;
 
 CREATE TABLE tb_Gravadora(
-	Cod_Grav INT NOT NULL,
+	Cod_Grav INT NOT NULL AUTO_INCREMENT,
     Nome_Grav VARCHAR(50) NOT NULL UNIQUE,
     PRIMARY KEY(Cod_Grav)
     );
@@ -19,7 +19,7 @@ CREATE TABLE tb_Gravadora(
 DESCRIBE tb_Gravadora;
 
 CREATE TABLE tb_Categoria(
-	Cod_Cat INT NOT NULL,
+	Cod_Cat INT NOT NULL AUTO_INCREMENT,
     Nome_Cat VARCHAR(50) NOT NULL UNIQUE,
     PRIMARY KEY(Cod_Cat)
     );
@@ -35,7 +35,7 @@ CREATE TABLE tb_Estado(
 DESCRIBE tb_Estado;
 
 CREATE TABLE tb_Cidade(
-	Cod_Cid INT NOT NULL,
+	Cod_Cid INT NOT NULL AUTO_INCREMENT,
     Sigla_Est CHAR(2) NOT NULL,
     Nome_Cid VARCHAR(100) NOT NULL,
     PRIMARY KEY(Cod_Cid),
@@ -45,7 +45,7 @@ CREATE TABLE tb_Cidade(
 DESCRIBE tb_Cidade;
 
 CREATE TABLE tb_Cliente(
-	Cod_Cli INT NOT NULL,
+	Cod_Cli INT NOT NULL AUTO_INCREMENT,
     Cod_Cid INT NOT NULL,
     Nome_Cli VARCHAR(100) NOT NULL,
     End_Cli VARCHAR(200) NOT NULL,
@@ -71,7 +71,7 @@ CREATE TABLE tb_Conjuge(
 DESCRIBE tb_Conjuge;
 
 CREATE TABLE tb_Funcionario(
-	Cod_Func INT NOT NULL,
+	Cod_Func INT NOT NULL AUTO_INCREMENT,
     Nome_Func VARCHAR(100) NOT NULL,
     End_Func VARCHAR(100) NOT NULL,
     Sal_Func DECIMAL(10,2) NOT NULL DEFAULT 0.00,
@@ -83,7 +83,7 @@ CREATE TABLE tb_Funcionario(
 DESCRIBE tb_Funcionario;
 
 CREATE TABLE tb_Dependente(
-	Cod_Dep INT NOT NULL,
+	Cod_Dep INT NOT NULL AUTO_INCREMENT,
     Cod_Func INT NOT NULL,
     Nome_Dep VARCHAR(100) NOT NULL,
     Sexo_Dep ENUM("f", "m") NOT NULL,
@@ -94,7 +94,7 @@ CREATE TABLE tb_Dependente(
 DESCRIBE tb_Dependente;
 
 CREATE TABLE tb_Titulo(
-	Cod_Tit INT NOT NULL,
+	Cod_Tit INT NOT NULL AUTO_INCREMENT,
     Cod_Cat INT NOT NULL,
     Cod_Grav INT NOT NULL,
     Nome_CD VARCHAR(100) NOT NULL UNIQUE,
@@ -109,7 +109,7 @@ CREATE TABLE tb_Titulo(
 DESCRIBE tb_Titulo;
 
 CREATE TABLE tb_Pedido(
-	Num_Ped INT NOT NULL,
+	Num_Ped INT NOT NULL AUTO_INCREMENT,
     Cod_CLi INT NOT NULL,
     Cod_Func INT NOT NULL,
     Data_Ped DATETIME NOT NULL,
