@@ -19,7 +19,6 @@ public class Exercicio_096 {
             }
             System.out.println();
         }
-
         input.close();
     }
 }
