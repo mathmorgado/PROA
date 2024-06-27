@@ -16,7 +16,6 @@ public class Exercicio_095 {
         for (String nome : nomes) {
             System.out.println(nome);
         }
-
         input.close();
     }
 }
