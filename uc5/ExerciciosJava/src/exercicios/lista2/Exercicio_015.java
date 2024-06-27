@@ -11,7 +11,6 @@ public class Exercicio_015 {
         double salarioComAumento = salario + (salario * 0.15);
 
         System.out.println("Salario com 15% de aumento: R$" + salarioComAumento);
-
         input.close();
     }
 }
