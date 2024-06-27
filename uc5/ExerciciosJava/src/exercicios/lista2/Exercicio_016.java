@@ -18,7 +18,6 @@ public class Exercicio_016 {
         else {
             System.out.println(valor + " e = 0");
         }
-
         input.close();
     }
 }
