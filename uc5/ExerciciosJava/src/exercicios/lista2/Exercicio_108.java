@@ -18,7 +18,6 @@ public class Exercicio_108 {
             }
             System.out.println("Maior valor da linha " + i + ": " + maior);
         }
-
         input.close();
     }
 }
