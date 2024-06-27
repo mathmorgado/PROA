@@ -18,7 +18,6 @@ public class Exercicio_103 {
             }
         }
         System.out.println("Menor valor: " + menor);
-
         input.close();
     }
 }
