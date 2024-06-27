@@ -16,7 +16,6 @@ public class Exercicio_058 {
             b = temp + b;
         }
         System.out.println();
-
         input.close();
     }
 }
