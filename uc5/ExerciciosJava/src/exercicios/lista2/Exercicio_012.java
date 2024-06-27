@@ -14,7 +14,6 @@ public class Exercicio_012 {
 
         float imc = peso / (altura*altura);
         System.out.println("Seu imc e: " + imc);
-
         input.close();
     }
 }
