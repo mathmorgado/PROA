@@ -17,7 +17,6 @@ public class Exercicio_101 {
         }
         double media = (double) soma / 16;
         System.out.println("Media: " + media);
-
         input.close();
     }
 }
