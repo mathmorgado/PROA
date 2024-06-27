@@ -22,7 +22,6 @@ public class Exercicio_008 {
 
         System.out.println("Valores invertidos");
         System.out.println("A = " + a + "\nB = " + b);
-
         input.close();
     }
 }
