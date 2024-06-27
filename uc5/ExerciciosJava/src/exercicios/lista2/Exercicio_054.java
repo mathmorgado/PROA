@@ -12,6 +12,7 @@ public class Exercicio_054 {
             int num = input.nextInt();
             soma += num;
         }
+
         double media = (double) soma / 5;
         System.out.println("Media: " + media);
 
