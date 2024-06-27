@@ -18,7 +18,6 @@ public class Exercicio_013 {
         else {
             System.out.println(valor1 + " nao e multiplo de " + valor2);
         }
-
         input.close();
     }
 }
