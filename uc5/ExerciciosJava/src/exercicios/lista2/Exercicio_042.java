@@ -6,7 +6,7 @@ public class Exercicio_042 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Digite um número: ");
+        System.out.print("Digite um numero: ");
         int num = input.nextInt();
 
         int i = 2;
@@ -21,10 +21,10 @@ public class Exercicio_042 {
         }
 
         if (isPrimo && num > 1) {
-            System.out.println(num + " é primo");
+            System.out.println(num + " e primo");
         }
         else {
-            System.out.println(num + " não é primo");
+            System.out.println(num + " nao e primo");
         }
     }
 }
