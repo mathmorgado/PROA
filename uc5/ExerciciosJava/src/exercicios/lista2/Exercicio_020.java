@@ -15,7 +15,6 @@ public class Exercicio_020 {
         else {
             System.out.println(numero + " e impar!");
         }
-
         input.close();
     }
 }
