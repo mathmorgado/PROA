@@ -12,7 +12,6 @@ public class Exercicio_007 {
         double salarioLiquido = salario + (salario * 0.05);
 
         System.out.println("Salario Liquido (5% de comissao): R$" + salarioLiquido);
-
         input.close();
     }
 }
