@@ -17,7 +17,6 @@ public class Exercicio_076 {
             i++;
         } while (i <= num);
         System.out.println("Soma dos pares: " + soma);
-
         input.close();
     }
 }
