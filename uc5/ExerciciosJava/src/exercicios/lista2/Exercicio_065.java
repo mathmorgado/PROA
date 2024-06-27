@@ -27,7 +27,6 @@ public class Exercicio_065 {
         } else {
             System.out.println("Nenhuma idade foi inserida.");
         }
-
         input.close();
     }
 }
