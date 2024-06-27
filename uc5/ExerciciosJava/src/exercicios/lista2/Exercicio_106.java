@@ -29,7 +29,6 @@ public class Exercicio_106 {
         } else {
             System.out.println("As matrizes nao sao iguais.");
         }
-
         input.close();
     }
 }
