@@ -16,7 +16,6 @@ public class Exercicio_059 {
         }
         double media = (double) soma / 5;
         System.out.println("Media das idades: " + media);
-
         input.close();
     }
 }
