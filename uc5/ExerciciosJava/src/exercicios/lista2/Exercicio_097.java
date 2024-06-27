@@ -16,7 +16,6 @@ public class Exercicio_097 {
             }
         }
         System.out.println("Soma: " + soma);
-
         input.close();
     }
 }
