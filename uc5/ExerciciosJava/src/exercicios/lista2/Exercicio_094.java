@@ -17,7 +17,6 @@ public class Exercicio_094 {
                 System.out.println(num);
             }
         }
-
         input.close();
     }
 }
