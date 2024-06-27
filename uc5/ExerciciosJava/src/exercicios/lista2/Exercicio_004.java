@@ -13,7 +13,6 @@ public class Exercicio_004 {
             System.out.print("Digite uma nota entre 0 e 10: ");
             nota = input.nextFloat();
         } while (nota < 0 || nota > 10);
-
         return nota;
     }
 
