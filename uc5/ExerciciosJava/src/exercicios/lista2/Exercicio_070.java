@@ -13,7 +13,6 @@ public class Exercicio_070 {
             System.out.println(num + " x " + i + " = " + (num * i));
             i++;
         } while (i <= 10);
-
         input.close();
     }
 }
