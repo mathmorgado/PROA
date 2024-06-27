@@ -32,7 +32,6 @@ public class Exercicio_102 {
             }
             System.out.println();
         }
-
         input.close();
     }
 }
