@@ -26,7 +26,6 @@ public class Exercicio_028 {
         }
 
         System.out.printf("IMC: "+ imc + "\nClassificacao: " + classificacao);
-
         input.close();
     }
 
