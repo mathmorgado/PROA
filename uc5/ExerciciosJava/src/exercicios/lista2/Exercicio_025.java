@@ -16,7 +16,6 @@ public class Exercicio_025 {
             int faltasRestantes = 15 - faltas;
             System.out.println("Pode faltar mais " + faltasRestantes + " vezes!");
         }
-
         input.close();
     }
 }
