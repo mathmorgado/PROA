@@ -22,7 +22,6 @@ public class Exercicio_021 {
 
         System.out.println("Total de maioridade: " + maiorIdade);
         System.out.println("Total de menor de idade: " + (10 - maiorIdade));
-
         input.close();
     }
 }
