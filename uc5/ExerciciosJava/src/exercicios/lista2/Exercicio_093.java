@@ -16,7 +16,6 @@ public class Exercicio_093 {
             }
         }
         System.out.println("Quantidade no intervalo de 10 a 50: " + count);
-
         input.close();
     }
 }
