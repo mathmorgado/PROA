@@ -11,6 +11,7 @@ public class Exercicio_075 {
             b = temp + b;
             i++;
         } while (i < 20);
+
         System.out.println();
     }
 }
