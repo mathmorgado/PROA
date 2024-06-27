@@ -30,7 +30,6 @@ public class Exercicio_050 {
         else {
             System.out.println("Nenhuma idade foi inserida.");
         }
-
         input.close();
     }
 }
