@@ -16,7 +16,6 @@ public class Exercicio_022 {
         else {
             bonus = salario * 0.05;
         }
-
         System.out.println("Seu bonus salarial e: R$" + bonus);
         input.close();
     }
