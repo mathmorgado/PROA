@@ -28,7 +28,6 @@ public class Exercicio_099 {
             }
             System.out.println();
         }
-
         input.close();
     }
 
