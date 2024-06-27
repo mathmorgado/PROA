@@ -24,7 +24,6 @@ public class Exercicio_109 {
         } else {
             System.out.println("A matriz nao e identidade.");
         }
-
         input.close();
     }
 }
