@@ -32,7 +32,6 @@ public class Exercicio_023 {
                 qtdDias = 0;
             }
         } while (qtdDias == 0);
-
         input.close();
         return qtdDias;
     }
