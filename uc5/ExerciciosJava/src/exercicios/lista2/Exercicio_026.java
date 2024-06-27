@@ -16,7 +16,6 @@ public class Exercicio_026 {
         double valorTotal = precos[codigo - 1] * quantidade;
 
         System.out.printf("Valor total a ser pago: R$", valorTotal);
-
         input.close();
     }
 }
