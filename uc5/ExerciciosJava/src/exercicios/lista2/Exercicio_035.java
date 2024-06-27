@@ -20,7 +20,6 @@ public class Exercicio_035 {
         String situacao = (media >= 7) ? "Aprovado" : "Reprovado";
 
         System.out.printf("Média: %.2f\nSituação: %s\n", media, situacao);
-
         input.close();
     }
 
