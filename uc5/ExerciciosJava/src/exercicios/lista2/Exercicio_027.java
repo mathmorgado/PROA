@@ -17,7 +17,6 @@ public class Exercicio_027 {
         } else {
             System.out.println("Não pode se aposentar.");
         }
-
         input.close();
     }
 
