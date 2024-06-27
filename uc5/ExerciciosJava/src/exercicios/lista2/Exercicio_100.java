@@ -18,7 +18,6 @@ public class Exercicio_100 {
             }
         }
         System.out.println("Maior valor: " + maior);
-
         input.close();
     }
 }
