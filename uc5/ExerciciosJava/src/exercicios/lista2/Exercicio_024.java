@@ -34,7 +34,6 @@ public class Exercicio_024 {
                 System.out.println(valor2);
             }
         }
-
         input.close();
     }
 }
