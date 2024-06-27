@@ -23,7 +23,6 @@ public class Exercicio_088 {
         double mediaImpares = contImpares > 0 ? (double) somaImpares / contImpares : 0;
         System.out.println("Media dos pares: " + mediaPares);
         System.out.println("Media dos impares: " + mediaImpares);
-
         input.close();
     }
 }
