@@ -19,7 +19,6 @@ public class Exercicio_089 {
         }
         System.out.println("Quantidade de positivos: " + positivos);
         System.out.println("Quantidade de negativos: " + negativos);
-
         input.close();
     }
 }
