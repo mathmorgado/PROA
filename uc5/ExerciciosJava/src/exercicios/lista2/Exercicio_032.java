@@ -27,7 +27,6 @@ public class Exercicio_032 {
         }
 
         System.out.printf("Nota: %.1f\nConceito: %s\n", nota, conceito);
-
         input.close();
     }
 
