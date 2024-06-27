@@ -16,7 +16,6 @@ public class Exercicio_086 {
         for (int num : numeros) {
             System.out.println(num);
         }
-
         input.close();
     }
 }
