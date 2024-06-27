@@ -19,7 +19,6 @@ public class Exercicio_091 {
         }
         System.out.println("Soma dos positivos: " + somaPositivos);
         System.out.println("Soma dos negativos: " + somaNegativos);
-
         input.close();
     }
 }
