@@ -8,6 +8,7 @@ public class Exercicio_069 {
 
         int soma = 0;
         int i = 0;
+
         do {
             System.out.print("Digite um numero: ");
             int num = input.nextInt();
