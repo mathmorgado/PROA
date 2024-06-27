@@ -16,7 +16,6 @@ public class Exercicio_034 {
         } else {
             System.out.println("Não pode votar.");
         }
-
         input.close();
     }
 
