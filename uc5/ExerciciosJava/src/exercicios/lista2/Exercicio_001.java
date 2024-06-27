@@ -18,7 +18,6 @@ public class Exercicio_001 {
         int divisao = valor1 / valor2;
 
         System.out.print("Soma: " + soma + "\nSubtracao: " + subtracao + "\nMultiplicacao: " + multiplicacao + "\nDivisao: " + divisao);
-
         input.close();
     }
 
