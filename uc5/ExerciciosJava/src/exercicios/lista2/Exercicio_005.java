@@ -20,7 +20,6 @@ public class Exercicio_005 {
         else {
             System.out.println("O valor total da sua compra e: R$" + valorTotal);
         }
-
         input.close();
     }
 }
