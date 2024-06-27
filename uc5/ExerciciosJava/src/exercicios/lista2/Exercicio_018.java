@@ -18,7 +18,6 @@ public class Exercicio_018 {
         else {
             System.out.println(valor2 + " e maior");
         }
-
         input.close();
     }
 }
