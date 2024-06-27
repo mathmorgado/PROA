@@ -19,7 +19,6 @@ public class Exercicio_039 {
 
         double media = (double) soma / 5;
         System.out.println("Media: " + media);
-
         input.close();
     }
 }
