@@ -13,7 +13,6 @@ public class Exercicio_002 {
         double perimetro = 2 * Math.PI * raio;
 
         System.out.println("Area: " + area + "\nPerimetro: " + perimetro);
-
         input.close();
     }
 }
