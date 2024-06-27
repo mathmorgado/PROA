@@ -3,7 +3,6 @@ package exercicios.lista2;
 import java.util.Scanner;
 
 public class Exercicio_019 {
-
      public static float getNota() {
         Scanner input = new Scanner(System.in);
         float nota;
