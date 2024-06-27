@@ -16,7 +16,6 @@ public class Exercicio_084 {
             }
         }
         System.out.println("Quantidade de pares: " + pares);
-
         input.close();
     }
 }
