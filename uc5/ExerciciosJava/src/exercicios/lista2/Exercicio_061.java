@@ -15,7 +15,6 @@ public class Exercicio_061 {
             }
         }
         System.out.println("Soma dos pares: " + soma);
-
         input.close();
     }
 }
