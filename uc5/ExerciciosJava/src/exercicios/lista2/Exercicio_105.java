@@ -18,7 +18,6 @@ public class Exercicio_105 {
         for (int j = 0; j < 4; j++) {
             System.out.println("Soma da coluna " + j + ": " + somaColunas[j]);
         }
-
         input.close();
     }
 }
