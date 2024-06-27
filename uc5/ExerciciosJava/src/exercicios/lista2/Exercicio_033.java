@@ -21,7 +21,6 @@ public class Exercicio_033 {
         else {
             System.out.println("Turno inválido " + nome);
         }
-
         input.close();
     }
 
