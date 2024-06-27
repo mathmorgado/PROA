@@ -24,7 +24,6 @@ public class Exercicio_009 {
 
         // Exibe o montante após 12 meses
         System.out.printf("O montante apos 12 meses e: %.2f\n", montante);
-
         input.close();
     }
 }
