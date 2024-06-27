@@ -27,7 +27,6 @@ public class Exercicio_104 {
         } else {
             System.out.println("A matriz nao e simetrica.");
         }
-
         input.close();
     }
 }
