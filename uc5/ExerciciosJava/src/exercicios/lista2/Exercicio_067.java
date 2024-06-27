@@ -8,6 +8,7 @@ public class Exercicio_067 {
             soma += i;
             i++;
         } while (i <= 100);
+
         System.out.println("Soma: " + soma);
     }
 }
