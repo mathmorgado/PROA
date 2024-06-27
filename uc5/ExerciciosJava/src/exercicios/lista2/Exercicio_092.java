@@ -16,7 +16,6 @@ public class Exercicio_092 {
         for (int i = 4; i >= 0; i--) {
             System.out.println(numeros[i]);
         }
-
         input.close();
     }
 }
