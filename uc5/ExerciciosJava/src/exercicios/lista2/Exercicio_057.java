@@ -20,7 +20,6 @@ public class Exercicio_057 {
         } else {
             System.out.println(num + " nao e primo");
         }
-
         input.close();
     }
 }
