@@ -20,7 +20,6 @@ public class Exercicio_090 {
         } else {
             System.out.println("Nenhum numero é zero.");
         }
-
         input.close();
     }
 }
