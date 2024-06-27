@@ -15,7 +15,6 @@ public class Exercicio_078 {
             num /= 10;
         } while (num > 0);
         System.out.println();
-
         input.close();
     }
 }
