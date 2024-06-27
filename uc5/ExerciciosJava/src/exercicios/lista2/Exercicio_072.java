@@ -22,7 +22,6 @@ public class Exercicio_072 {
         } else {
             System.out.println(num + " nao e primo");
         }
-
         input.close();
     }
 }
