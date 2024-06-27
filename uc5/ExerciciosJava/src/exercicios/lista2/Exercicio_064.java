@@ -9,6 +9,7 @@ public class Exercicio_064 {
         System.out.print("Digite um numero: ");
         int num = input.nextInt();
         int fatorial = 1;
+
         for (int i = num; i > 0; i--) {
             fatorial *= i;
         }
