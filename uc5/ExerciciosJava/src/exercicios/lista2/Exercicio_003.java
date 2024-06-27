@@ -15,7 +15,6 @@ public class Exercicio_003 {
         int area = base * altura / 2;
 
         System.out.println("Area = " + area);
-
         input.close();
     }
 }
