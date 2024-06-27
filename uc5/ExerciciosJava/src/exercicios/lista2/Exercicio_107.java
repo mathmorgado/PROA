@@ -18,7 +18,6 @@ public class Exercicio_107 {
             }
         }
         System.out.println("Produto da diagonal secundaria: " + produtoDiagonalSecundaria);
-
         input.close();
     }
 }
