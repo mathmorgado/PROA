@@ -9,6 +9,7 @@ public class Exercicio_060 {
             a = b;
             b = temp + b;
         }
+
         System.out.println();
     }
 }
