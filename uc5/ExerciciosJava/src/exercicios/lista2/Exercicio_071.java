@@ -17,7 +17,6 @@ public class Exercicio_071 {
             i++;
         } while (i <= num);
         System.out.println();
-
         input.close();
     }
 }
