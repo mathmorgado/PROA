@@ -15,7 +15,6 @@ public class Exercicio_031 {
         double numSalariosMinimos = salarioFuncionario / salarioMinimo;
 
         System.out.printf("O funcionario recebe %.2f salarios iínimos.\n", numSalariosMinimos);
-
         input.close();
     }
 
