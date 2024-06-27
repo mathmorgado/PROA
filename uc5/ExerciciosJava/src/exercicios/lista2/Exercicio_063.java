@@ -8,6 +8,7 @@ public class Exercicio_063 {
 
         System.out.print("Digite um numero: ");
         int num = input.nextInt();
+
         System.out.print("Digitos: ");
         for (int i = num; i > 0; i /= 10) {
             int digito = i % 10;
