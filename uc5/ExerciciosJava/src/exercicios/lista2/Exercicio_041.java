@@ -18,7 +18,6 @@ public class Exercicio_041 {
             }
             i++;
         }
-
         System.out.println();
     }
 }
