@@ -12,7 +12,6 @@ public class Exercicio_010 {
         for (int i = 1; i < 11; i++) {
             System.out.println(numeroTabuada + " x " + i + " = " + (numeroTabuada * i));
         }
-
         input.close();
     }
 }
