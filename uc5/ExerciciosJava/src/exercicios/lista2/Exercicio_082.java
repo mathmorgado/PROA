@@ -14,7 +14,6 @@ public class Exercicio_082 {
             soma += numeros[i];
         }
         System.out.println("Soma: " + soma);
-
         input.close();
     }
 }
