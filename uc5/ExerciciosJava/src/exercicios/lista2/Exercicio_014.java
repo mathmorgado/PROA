@@ -19,7 +19,6 @@ public class Exercicio_014 {
 
         int qtdDias = dias + (meses * 30) + (anos * 364);
         System.out.println("Voce viveu " + qtdDias + " dias!");
-
         input.close();
     }
 }
