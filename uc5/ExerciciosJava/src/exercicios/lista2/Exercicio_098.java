@@ -18,7 +18,6 @@ public class Exercicio_098 {
             }
         }
         System.out.println("Soma da diagonal principal: " + somaDiagonal);
-
         input.close();
     }
 }
