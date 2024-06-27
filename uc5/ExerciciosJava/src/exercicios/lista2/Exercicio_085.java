@@ -22,7 +22,6 @@ public class Exercicio_085 {
         }
         System.out.println("Maior: " + maior);
         System.out.println("Menor: " + menor);
-
         input.close();
     }
 }
