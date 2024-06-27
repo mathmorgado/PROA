@@ -14,7 +14,6 @@ public class Exercicio_079 {
             num--;
         } while (num > 0);
         System.out.println("Fatorial: " + fatorial);
-
         input.close();
     }
 }
