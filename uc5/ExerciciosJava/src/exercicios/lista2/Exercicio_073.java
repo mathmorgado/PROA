@@ -16,7 +16,6 @@ public class Exercicio_073 {
             b = temp + b;
         } while (a <= num);
         System.out.println();
-
         input.close();
     }
 }
