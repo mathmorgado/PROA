@@ -15,7 +15,6 @@ public class Exercicio_029 {
         String situacao = (nota >= 7) ? "Aprovado" : "Recuperação";
 
         System.out.printf("Aluno: %s\nSituação: %s\n", nome, situacao);
-
         scanner.close();
     }
 
