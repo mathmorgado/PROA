@@ -21,7 +21,6 @@ public class Exercicio_017 {
         else {
             System.out.println("Crianca");
         }
-
         input.close();
     }
 }
