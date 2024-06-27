@@ -15,7 +15,6 @@ public class Exercicio_056 {
             }
         }
         System.out.println();
-
         input.close();
     }
 }
