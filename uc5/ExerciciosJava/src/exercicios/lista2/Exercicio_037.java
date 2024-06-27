@@ -9,7 +9,6 @@ public class Exercicio_037 {
             soma += i;
             i++;
         }
-
         System.out.println("Soma: " + soma);
     }
 }
